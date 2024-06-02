@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^riwaio\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.riwaio\.com$
+RewriteRule ^/?$ "https\:\/\/riwaio\.com\/" [R=301,L]
+

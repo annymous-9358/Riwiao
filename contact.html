@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META charset="UTF-8">
+<META name="viewport" content= "width=device-width, user-scalable=no" initial-scale="1">
+<TITLE>Welcome To MoveTez</title>
+<link rel="stylesheet" type="text/css" href="./common/styles.css">
+<link rel="stylesheet" type="text/css" href="./common/body.css">
+<link rel="stylesheet" type="text/css" href="./common/slider.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+/* Media Queries For Smartphones */
+@media only screen and (max-width: 768px) {
+#mcontact
+{
+  position:relative;
+  display:block;
+  font-family:Nexa;
+  line-height:3.9rem;
+  padding-top:5.23%;
+  margin-top:2%;
+  padding-left:3.2%;
+  width:100%;
+  font-size:4em;
+}
+}
+
+/* Media Queries for Tablet/Phablet/iPads in Landscape Mode */
+@media only screen and (min-width : 769px) and (max-width : 1024px) and (orientation : landscape) {}
+
+/* Media Queries for Tablet/iPads in Portrait Mode */
+@media only screen and (min-width : 769px) and (max-width : 1024px) and (orientation : portrait) {}
+
+/* Media Queries for High-Pixel-Smaller-Screen QHD/4K displays like Larger Palmtop/Macbook/Convertible laptops */
+@media only screen and (min-width : 1025px) and (max-width : 1224px) {
+#mcontact
+{
+  display:none;
+}
+}
+
+/* Media Queries for Desktop/Laptops */
+@media only screen and (min-width : 1225px) { 
+#mcontact
+{
+  display:none;
+}
+}
+
+</style>
+<script>
+//Page on top during unload before reload
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}
+</script>
+<script>
+//Window Reload on Page Resize in desktops
+var windowsize = window.matchMedia("(min-width: 1225px)");
+function onresizer() {
+if(windowsize.matches)
+{
+  onresize();
+}
+}
+
+function onresize()
+{
+$(window).bind('resize', function(e)
+{
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(function()
+  {
+    this.location.reload(false); /* false to get page from cache */
+  }, 100);
+});
+}
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+}
+</script>
+</head>
+<BODY link="black" alink="black" vlink="black" onLoad="onresizer();">
+
+<!-- PAGE-CONTAINER START -->
+<div id="page-container">
+
+
+<!-- HALF PAGE START -->
+<!-- for desktop/laptop start -->
+<div id="halfpage">
+<!-- HEADER START -->
+<div class="header">
+<span alt="MoveTez" style="float:left;width:15%;height:97px;"><a href="index.html"><img src="./common/logo.png" align="top" width="100%" /></a></span>
+<span id="hderlinks" style="float:left;padding:1% 0 0 15%;width:70%;">
+<B><a href="about.html" style="font-family:Nexa;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">About </span>Us</a><a id="producthder" href="index.html#products-start" style="font-family:Nexa;padding-left:10%;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">Produc</span>ts</a><a id="pricinghder" href="index.html#pricing" style="font-family:Nexa;padding-left:10%;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">Prici</span>ng</a></B>
+<button id="callusbtn" role="button" onclick="location.href='contact.html'" title="Contact Us">Contact</button><button id="rgisterbtn" onclick="location.href='index.html#register-section'" role="button" title="Register">Register</button></span>
+<!-- HIDDEN STICKY NAVBAR START -->
+<div id="supernavi">
+<div id="navbar">
+<div id="naavbar" style="display:none;padding:10px;">
+<span style="float:left;margin-top:-1.188%;width:6%;height:52px;"><a href="index.html"><img alt="MoveTez" src="./common/logobg.png" align="top" width="100%" /></a>&ensp;&ensp;</span>
+<B><a href="about.html" style="text-decoration:none;" title="">&ensp;&ensp;<span class="navitxt">About </span>Us&ensp;&ensp;</a>
+<a id="productnaavbar" href="index.html#products-start" style="text-decoration:none;" title=""><span class="navitxt">Product</span>s&ensp;&ensp;</a>
+<a id="pricingnaavbar" href="index.html#pricing" style="text-decoration:none;" title=""><span class="navitxt">Pricin</span>g&ensp;&ensp;</a>
+<span style="float:right;margin-right:1%;">
+<button class="contactbutton" onclick="location.href='contact.html'" type="button">Contact</button>
+&ensp;&ensp;
+&ensp;&ensp;
+&ensp;&ensp;
+&ensp;&ensp;
+<button class="registerbutton" onclick="location.href='index.html#register-section'" type="button">Register</button>
+</span>
+</div>
+</div>
+</div>
+<!-- HIDDEN STICKY NAVBAR END -->
+<!-- HEADER CONTENT START -->
+<div style="position:relative;display:block;font-family:Nexa;line-height:3.9rem;float:right;padding-top:5.23%;padding-bottom:10%;margin-top:2%;padding-left:2%;width:46%;right:-5%;font-size:4em;">
+<font color="#3B7CE4"><B>Reach</b></font>
+<font color="#3B7CE4"><B>Us Out!</b></font><br />
+<font color="black"><p style="font-size:2rem;line-height:39px;">MoveTez is revolutionizing transportation logistics,<br> contact us to help us<br> to help you.</p></font>
+<div style="font-size:21px;line-height:39px;margin-left:12%;">
+<UL>
+<LI>9799909804</LI>
+<LI>contactus@movetez.com</LI>
+<LI>A92-93 Badarwas Sunder Nagar <br>Mansarovar Jaipur RAJ</LI>
+</UL>
+</div>
+</div>
+<div style="position:relative;display:block;float:left;left:-2%;margin-top:-2%;width:47.13%;height:585px;">
+<img src="./contact_files/halfpage.png" height="100%" width="100%" />
+<br /><br />
+<!-- <img src="./contact_files/truck.jpg" id="movingdot" style="margin-left:10px;" height="90px" width="150px" />  -->
+</div>
+<!-- HEADER CONTENT END -->
+</div>
+<!-- HEADER END -->
+</div>
+<!-- for desktop/laptop end -->
+<!-- for mobile start -->
+<div id="mhalfpage" class="mhalfpage">
+<div id="mheader">
+<span alt="MoveTez" style="float:right;width:35%;margin:0.0119% 2% 0 0;height:50px;"><a href="index.html"><img src="./common/logo.png" align="top" width="100%" height="100%" /></a></span>
+</div>
+<div id="menuBtn"></div>
+<div id="msupernavi">
+<div id="mnavbar">
+<div id="mnaavbar" style="display:none;padding:10px;">
+<span style="float:right;width:35%;margin-right:30.36%;height:50px;margin-top:-0.789%;"><a href="index.html"><img alt="MoveTez" src="./common/logo.png" align="top" width="100%" height="100%" /></a></span>
+<!-- <span style="float:right;margin-right:1%;">
+<button class="mregisterbutton" onclick="location.href='index.html#register-section'" type="button">Register</button> -->
+</span>
+</div>
+</div>
+</div>
+<ul id="mnav">
+<li class="mnavli"><a href="about.html" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">About us</font></a></li>
+<li class="mnavli"><a href="index.html#pricing" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">Pricing</a></li>
+<li class="mnavli"><a href="index.html#products-start" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">Products</a></li>
+<li class="mnavli"><a href=""><font color="#1ed4ed">Contact</font></a></li>
+</ul>
+<div id="mobileHeadContent">
+<div id="mhalfimage"><img src="./contact_files/halfpage.png" /></div>
+<div id="mobileContent" style="display:none;">
+<center><B><span style="position:relative;font-size:5vh;">9799909804</span></b><br>
+<B><span style="position:relative;font-size:3vh;">contactus@movetez.com</span></b><br>
+<B><span style="position:relative;font-size:4vh;">Address</span></b></center>
+</div>
+</div>
+</div>
+<!-- for mobile end -->
+<!-- HALF PAGE END -->
+
+
+<div class="xtraspace xxtraspace"><br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br></div>
+
+
+<!-- CONTENT START -->
+<div id="content">
+<!-- WARNING DONT DISTURB THE HALF-PAGE-CONTENT NAVBAR PAGE-CONTAINER DIV -->
+
+
+<br><br>
+<div class="xxtraspace"><br /><br /><br>
+<br /><br /><br>
+<br /><br /></div>
+
+
+<div id="mcontact">
+<font color="#3B7CE4"><B>Reach</b></font><br />
+<font color="#3B7CE4"><B>Us Out!</b></font><br />
+<font color="black"><p style="font-size:2rem;line-height:39px;">MoveTez is revolutionizing transportation logistics,<br> contact us to help us<br> to help you.</p></font>
+<div style="font-size:21px;line-height:39px;margin-left:12%;">
+<UL>
+<LI>9799909804</LI>
+<LI>contactus@movetez.com</LI>
+<LI>A92-93 Badarwas Sunder Nagar <br>Mansarovar Jaipur RAJ</LI>
+</UL>
+</div>
+</div>
+
+<br><br><br><br>
+</div>
+<!-- CONTENT END -->
+
+
+<div class="xtraspace xxtraspace"><br><br>
+<br><br>
+<br><br></div>
+
+
+<!-- THE FOOTER -->
+<div id="footer0" class="container-fluid" style="color:silver;">
+<br>
+<div style="position:relative;width:26.01%;margin-left:2%;float:left;padding:10px;font-family:Nexa;">
+<div style="border-right:1px groove #70a9b6;">
+<div title="MoveTez" style="float:left;width:80.897%;height:auto;"><a href="index.html"><img src="./common/logod.png" align="top" width="100%" /></a></div>
+<div style="position:relative;font-size:18px;clear:both;margin-left:4%;"><br />Safe Chalega, Tez Bhadega</div>
+<div style="position:relative;clear:both;float:left;left:22.01%;"><br />
+<div style="display:flex;flex-direction:row;">
+<div style="background-color:#1ed4ed;width:25px;height:25px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+</div>
+</div>
+<div style="position:relative;font-size:13px;clear:both;color:white;margin-left:3.5%;"><br /><br /><br />
+<br />
+</div>
+</div>
+</div>
+<div style="position:relative;width:63%;float:left;margin-left:5.65%;padding:0px;font-family:Nexa;">
+<div style="position:relative;float:left;width:17.945%;">
+<h3>Company</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="about.html">About Us</a><br>
+<a style="text-decoration:none;" href="index.html#pricing">Pricing</a><br>
+<a style="text-decoration:none;" href="">O<font face="arial" size="3em">ff</font>ers</a><br></div>
+</div>
+<div style="position:relative;left:2%;float:left;width:25%;">
+<h3>Service</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="./register/vendor.html">Vendors<br>
+<a style="text-decoration:none;" href="./register/driver.html">Drivers<br>
+<a style="text-decoration:none;" href="movnpack.html">Movers & Packers</a><br></div>
+</div>
+<div style="position:relative;margin-left:2%;float:left;width:15%;">
+<h3>Resources</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="blog.html">Blog</a><br><br>
+<img src="./common/briefcase.png" width="33px" height="30px" align="top" />&ensp;<a style="text-decoration:none;" href="hiring.html">Hiring</a><br></div>
+</div>
+<div style="position:relative;margin-right:8.439%;margin-top:-3.9567%;float:right;width:24.28%;">
+<span title="Download for Android" style="width:100%;height:auto;"><a href=""><img src="./common/appicoo.png" align="top" width="100%" /></a></span>
+</div>
+</div>
+<div style="position:relative;left:10%;width:40%;float:left;">
+<br><br><br><br>
+</div>
+<div style="position:relative;display:block;clear:both;width:100%;background:#2b2e33;height:auto;">
+<span style="position:relative;font-size:16px;float:left;color:white;margin-left:3.5%;">
+<a href="./privacy.html" style="text-decoration:none;"><font color="white">Privacy Policy</font></a>&ensp;&ensp;<a href="./tos.html" style="text-decoration:none;"><font color="white">Terms of Service</font></a>
+</span>
+<center><font size="3px">Copyright &copy; 2021-22 All Rights Reserved.</font><center>
+<span style="position:relative;font-size:16px;float:right;margin-top:-1.5%;margin-right:3%;color:white;">
+<a href="./sitemap.php" style="text-decoration:none;"><font color="white">Sitemap</font></a>
+</span>
+<br />
+</div>
+</div>
+
+<div id="footer1" class="container-fluid" style="color:silver;">
+<br />
+<div style="position:relative;display:block;clear:both;width:100%;font-family:Nexa;">
+<div title="MoveTez" style="float:left;margin:0 0 0 5%;width:48%;height:auto;"><a href="index.html"><img src="./common/logod.png" align="top" width="100%" /></a></div>
+<div style="float:right;margin-right:8.9%;margin-top:-5%;width:30%;"><br />
+<a href=""><img src="./common/appicoo.png" align="top" width="100%" /></a>
+</div><br><br>
+<div style="position:relative;font-size:14px;margin-left:9.29%;"><br />Safe Chalega, Tez Bhadega</div><br />
+<div style="position:relative;display:block;width:100%;">
+<div style="display:flex;flex-direction:row;margin-left:17%;width:25%;">
+<div style="background-color:#1ed4ed;width:25px;height:25px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+</div>
+</div>
+</div>
+<br /><br>
+<div style="position:relative;display:block;clear:both;width:100%;font-family:Nexa;">
+<div style="position:relative;float:left;width:45%;margin-left:8%;">Company<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="about.html">About Us</a><br>
+<a href="index.html#pricing">Pricing</a><br>
+<a href="">Of<font face="cambria">f</font>ers</a></div>
+</div>
+<div style="position:relative;float:right;width:35.5956%;margin-right:3%;">Resources<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="">Blog</a><br>
+<br>
+<a href=""><img src="./common/briefcase.png" width="30px" height="25px" align="top" /> Hiring</a></div>
+</div>
+</div>
+<div style="position:relative;display:block;top:2.4vh;height:auto;clear:both;width:100%;font-family:Nexa;"><br>
+<div style="position:relative;float:left;width:45%;margin-left:8%;">Service<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="./register/vendor.html">Vendors</a><br>
+<a href="./register/driver.html">Drivers</a><br>
+<a href="">Movers &amp; Packers</a></div>
+</div>
+<br><br><br />
+</div>
+<br /><br /><br /><br />
+<div style="position:relative;display:block;clear:both;top:3vh;width:100%;font-family:Nexa;">
+<span style="margin-left:4%;font-size:14px;position:relative;">Privacy Policy</span>
+<span style="margin-left:6%;font-size:14px;position:relative;">Terms Of Service</span>
+<span style="margin-left:7.98%;font-size:14px;position:relative;">Sitemap</span>
+<br /><center>Copyright &copy; 2021-22 All Rights Reserved.</center>
+</div>
+<br /><br />
+</div>
+<!-- THE FOOTER END -->
+
+
+</div>
+<!-- END OF PAGE-CONTAINER -->
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+<script src="./common/slider.js"></script>
+<script type="text/javascript" src="./common/mscript.js"></script>
+<script type="text/javascript" src="./common/script.js"></script>
+<script>
+function bgchnger(x)
+{
+  if(x == 1)
+  {
+    document.getElementById("child-flexi1").style.background = "#666666";
+  }
+  else if(x == 2)
+  {
+    document.getElementById("child-flexi2").style.background = "#7ab6d1";
+  }
+  else if(x == 3)
+  {
+    document.getElementById("child-flexi3").style.background = "#666666";
+  }
+  else if(x == 4)
+  {
+    document.getElementById("child-flexi1").style.background = "#000000";
+  }
+  else if(x == 5)
+  {
+    document.getElementById("child-flexi2").style.background = "#4297bf";
+  }
+  else if(x == 6)
+  {
+    document.getElementById("child-flexi3").style.background = "#000000";
+  }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+
+</body>
+</html>

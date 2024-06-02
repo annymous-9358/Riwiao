@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META charset="UTF-8">
+<META name="viewport" content= "width=device-width, user-scalable=no" initial-scale="1">
+<TITLE>About Us || MoveTez</title>
+<link rel="stylesheet" type="text/css" href="./common/styles.css">
+<link rel="stylesheet" type="text/css" href="./common/body.css">
+<link rel="stylesheet" type="text/css" href="./common/slider.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+/* Media Queries for Smartphones */
+@media only screen and (max-width: 768px) {
+.mhws
+{
+  position:relative;
+  display:block;
+  clear:both;
+  height:auto;
+  width:100%;
+}
+
+.hws
+{
+  display:none;
+}
+
+.mhwspic
+{
+  position:relative;
+  height:445px;
+  width:92%;
+  clear:both;
+  margin:0 2% 0 5%;
+}
+
+.mhwstxt
+{
+  position:relative;
+  font-family:Nexa;
+  clear:both;
+  color:black;
+  height:auto;
+  margin:0 0 0 1%;
+  width:98%;
+  opacity:0.9;
+}
+
+.mwaw
+{
+  position:relative;
+  display:block;
+  clear:both;
+  height:auto;
+  width:100%;
+}
+
+.waw
+{
+  display:none;
+}
+
+.mwawpic
+{
+  position:relative;
+  height:520px;
+  width:95%;
+  clear:both;
+  margin:-22.09% 2% 0 2%;
+}
+
+.mwawtxt
+{
+  position:relative;
+  font-family:Nexa;
+  clear:both;
+  color:black;
+  height:auto;
+  margin:0 0 0 1%;
+  width:98%;
+  opacity:0.9;
+}
+
+.mwwv
+{
+  position:relative;
+  display:block;
+  clear:both;
+  height:auto;
+  width:100%;
+}
+
+.wwv
+{
+  display:none;
+}
+
+.mwwvpic
+{
+  position:relative;
+  height:220px;
+  width:92%;
+  clear:both;
+  margin:0% 2% 0 7%;
+}
+
+.mwwvtxt
+{
+  position:relative;
+  font-family:Nexa;
+  clear:both;
+  color:black;
+  height:auto;
+  margin:0 0 0 1%;
+  width:98%;
+  opacity:0.9;
+}
+
+#mstatistics {
+  display: flex;
+  flex-direction: reverse;
+}
+
+#mstatistics div {
+  width: 42.5%;
+  height:auto;
+  margin-left:5%;
+  font-size:12px;
+}
+
+#mstatistics div img {
+  width: 75%;
+  height: 75%;
+  height:auto;
+  margin-left:5%;
+}
+
+#statistics
+{
+  display:none;
+}
+
+.mregsection
+{
+  position:relative;
+  display:block;
+  width:98.70009%;
+  margin-left:0.58159%;
+  height:auto;
+  clear:both;
+}
+
+.regsection
+{
+  display:none;
+}
+}
+
+/* Media Queries for Tablet/Phablet/iPads in Landscape Mode */
+@media only screen and (min-width : 769px) and (max-width : 1024px) and (orientation : landscape) {
+
+.mregsection
+{
+  display:none;
+}
+
+.regsection
+{
+  position:relative;
+  display:box;
+  width:100%;
+  height:auto;
+  clear:both;
+}
+}
+
+/* Media Queries for Tablet/iPads in Portrait Mode */
+@media only screen and (min-width : 769px) and (max-width : 1024px) and (orientation : portrait) {
+
+.mregsection
+{
+  position:relative;
+  display:block;
+  width:98.79999%;
+  margin-left:1.159%;
+  height:auto;
+  clear:both;
+  font-size:57%;
+}
+
+.regsection
+{
+  display:none;
+}
+}
+
+/* Media Queries for High-Pixel-Smaller-Screen QHD/4K displays like Larger Palmtop/Macbook/Convertible laptops */
+@media only screen and (min-width : 1025px) and (max-width : 1224px) { }
+
+/* Media Queries for Desktop/Laptops */
+@media only screen and (min-width : 1225px) { 
+.hws
+{
+  position:relative;
+  display:box;
+  width:100%;
+  height:515px;
+  clear:both;
+}
+
+.mhws
+{
+  display:none;
+}
+
+.hwspic
+{
+  position:relative;
+  margin-left:0%;
+  float:left;
+  height:545px;
+  width:44%;
+  margin-top:-2.599%;
+}
+
+.hwstxt
+{
+  position:relative;
+  margin-right:4%;
+  font-family:Nexa;
+  color:black;
+  float:right;
+  height:auto;
+  margin-top:1%;
+  width:44%;
+  padding:1%;
+  opacity:0.9;
+}
+
+.waw
+{
+  position:relative;
+  display:box;
+  width:100%;
+  height:500px;
+  clear:both;
+}
+
+.mwaw
+{
+  display:none;
+}
+
+.wawpic
+{
+  position:relative;
+  margin-right:4%;
+  float:right;
+  height:554px;
+  width:44.5%;
+  margin-top:-8%;
+}
+
+.wawtxt
+{
+  position:relative;
+  font-family:Nexa;
+  color:black;
+  float:left;
+  padding:1%;
+  opacity:0.89;
+  height:auto;
+  margin-top:0%;
+  width:41.399%;
+}
+
+.wwv
+{
+  position:relative;
+  display:box;
+  width:100%;
+  height:425px;
+  clear:both;
+}
+
+.mwwv
+{
+  display:none;
+}
+
+.wwvpic
+{
+  position:relative;
+  margin-left:0%;
+  float:left;
+  height:390px;
+  width:44%;
+  margin-top:-2%;
+}
+
+.wwvtxt
+{
+  position:relative;
+  margin-right:4%;
+  font-family:Nexa;
+  color:black;
+  float:right;
+  height:auto;
+  opacity:0.8;
+  margin-top:-1.5%;
+  width:43.399%;
+}
+
+#statistics {
+  display: flex;
+  flex-direction: reverse;
+}
+
+#statistics div {
+  width: 25%;
+  height:auto;
+  margin-left:5%;
+}
+
+#mstatistics
+{
+  display:none;
+}
+
+.regsection
+{
+  position:relative;
+  display:box;
+  width:100%;
+  height:515px;
+  clear:both;
+}
+
+.mregsection
+{
+  display:none;
+}
+
+#main-flex {
+  width:96.785%;
+  height: 400px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-direction: row;
+}
+
+#child-flexi1, #child-flexi2, #child-flexi3
+{
+  width:40%;
+  padding:8% 0 10% 13%;
+  cursor: pointer;
+}
+
+#child-flexi1:hover .zoomflexi1
+{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+#child-flexi2:hover .zoomflexi2
+{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+#child-flexi3:hover .zoomflexi3
+{
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+.zoomflexi1
+{
+  transition: transform .3s;
+}
+
+.zoomflexi2
+{
+  transition: transform .3s;
+}
+
+.zoomflexi3
+{
+  transition: transform .3s;
+}
+}
+
+</style>
+<script>
+//Page on top during unload before reload
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}
+</script>
+<script>
+//Window Reload on Page Resize in desktops
+var windowsize = window.matchMedia("(min-width: 1225px)");
+function onresizer() {
+if(windowsize.matches)
+{
+  onresize();
+}
+}
+
+function onresize()
+{
+$(window).bind('resize', function(e)
+{
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(function()
+  {
+    this.location.reload(false); /* false to get page from cache */
+  }, 100);
+});
+}
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+}
+</script>
+</head>
+<BODY link="black" alink="black" vlink="black" onLoad="onresizer();">
+
+<!-- PAGE-CONTAINER START -->
+<div id="page-container">
+
+
+<!-- HALF PAGE START -->
+<!-- for desktop/laptop start -->
+<div id="halfpage">
+<!-- HEADER START -->
+<div class="header">
+<span alt="MoveTez" style="float:left;width:15%;height:97px;"><a href="index.html"><img src="./common/logo.png" align="top" width="100%" /></a></span>
+<span id="hderlinks" style="float:left;padding:1% 0 0 15%;width:70%;">
+<B><a class="aactive" href="about.html" style="font-family:Nexa;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">About </span>Us</a><a id="producthder" href="index.html#products-start" style="font-family:Nexa;padding-left:10%;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">Produc</span>ts</a><a id="pricinghder" href="index.html#pricing" style="font-family:Nexa;padding-left:10%;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">Prici</span>ng</a></B>
+<button id="callusbtn" role="button" onclick="location.href='contact.html'" title="Contact Us">Contact</button><button id="rgisterbtn" onclick="location.href='index.html#register-section'" role="button" title="Register">Register</button></span>
+<!-- HIDDEN STICKY NAVBAR START -->
+<div id="supernavi">
+<div id="navbar">
+<div id="naavbar" style="display:none;padding:10px;">
+<span style="float:left;margin-top:-1.188%;width:6%;height:52px;"><a href="index.html"><img alt="MoveTez" src="./common/logobg.png" align="top" width="100%" /></a>&ensp;&ensp;</span>
+<B><a class="proactive" href="about.html" style="text-decoration:none;" title="">&ensp;&ensp;<span class="navitxt">About </span>Us&ensp;&ensp;</a>
+<a id="productnaavbar" href="index.html#products-start" style="text-decoration:none;" title=""><span class="navitxt">Product</span>s&ensp;&ensp;</a>
+<a id="pricingnaavbar" href="index.html#pricing" style="text-decoration:none;" title=""><span class="navitxt">Pricin</span>g&ensp;&ensp;</a>
+<span style="float:right;margin-right:1%;">
+<button class="contactbutton" onclick="location.href='contact.html'" type="button">Contact</button>
+&ensp;&ensp;
+&ensp;&ensp;
+&ensp;&ensp;
+&ensp;&ensp;
+<button class="registerbutton" onclick="location.href='index.html#register-section'" type="button">Register</button>
+</span>
+</div>
+</div>
+</div>
+<!-- HIDDEN STICKY NAVBAR END -->
+<!-- HEADER CONTENT START -->
+<div style="position:relative;display:block;float:right;padding-top:5.23%;padding-bottom:10%;margin-top:12%;padding-left:2%;width:46%;right:5%;font-size:4.6em;">
+<center><font color="#395062"><B>Revolutionizing</b></font><br>
+<font color="#1ed4ed" size="21em"><B>Intracity Transport</b></font><br>
+<font color="#1ed4ed"><B>Logistics </b></font><font color="#395062"><B>Sector</b></font></center>
+</div>
+<div style="position:relative;display:block;float:left;left:-2%;margin-top:0%;width:550px;height:667px;">
+<img src="./about_files/halfpage.png" height="100%" width="100%" />
+<br /><br />
+<!-- <img src="./about_files/truck.jpg" id="movingdot" style="margin-left:10px;" height="90px" width="150px" />  -->
+</div>
+<!-- HEADER CONTENT END -->
+</div>
+<!-- HEADER END -->
+</div>
+<!-- for desktop/laptop end -->
+<!-- for mobile start -->
+<div id="mhalfpage" class="mhalfpage">
+<div id="mheader">
+<span alt="MoveTez" style="float:right;width:35%;margin:0.0119% 2% 0 0;height:50px;"><a href="index.html"><img src="./common/logo.png" align="top" width="100%" height="100%" /></a></span>
+</div>
+<div id="menuBtn"></div>
+<div id="msupernavi">
+<div id="mnavbar">
+<div id="mnaavbar" style="display:none;padding:10px;">
+<span style="float:right;width:35%;margin-right:30.36%;height:50px;margin-top:-0.789%;"><a href="index.html"><img alt="MoveTez" src="./common/logo.png" align="top" width="100%" height="100%" /></a></span>
+<!-- <span style="float:right;margin-right:1%;">
+<button class="mregisterbutton" onclick="location.href='index.html#register-section'" type="button">Register</button> -->
+</span>
+</div>
+</div>
+</div>
+<ul id="mnav">
+<li class="mnavli"><a href=""><font color="#1ed4ed">About us</font></a></li>
+<li class="mnavli"><a href="index.html#pricing" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">Pricing</a></li>
+<li class="mnavli"><a href="index.html#products-start" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">Products</a></li>
+<li class="mnavli"><a href="contact.html" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">Contact</a></li>
+</ul>
+<div id="mobileHeadContent">
+<div id="mhalfimage"><img src="./about_files/halfpage.png" /></div>
+<div id="mobileContent">
+<center><B><span style="position:relative;font-size:5vh;">Revolutionizing</span></b><br>
+<B><span style="position:relative;font-size:3vh;">Intracity Transport</span></b><br>
+<B><span style="position:relative;font-size:4vh;">Logistics Sector</span></b></center>
+</div>
+</div>
+</div>
+<!-- for mobile end -->
+<!-- HALF PAGE END -->
+
+
+<div class="xtraspace xxtraspace"><br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br></div>
+
+
+<!-- CONTENT START -->
+<div id="content">
+<!-- WARNING DONT DISTURB THE HALF-PAGE-CONTENT NAVBAR PAGE-CONTAINER DIV -->
+
+
+<div class="xxtraspace"><br /><br /><br>
+<br /><br /><br>
+<br /><br /><br>
+<br /><br /><br></div>
+
+
+<!-- How we started START -->
+<div class="hws">
+<br /><br /><br>
+<img src="./about_files/hwspic.png" class="hwspic" />
+<div class="hwstxt">
+<H1 class="hwsheading" align="right"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;"><B>Ou</span>r Mission</b></font></h1>
+<p align="justify" style="position:relative;font-size:2rem;margin-top:5%;">
+Our mission is to provide hassle-free transportation services with industrial experts on board, making transport logistics more secure, safe and trustworthy.</p>
+</div>
+</div>
+
+<div class="mhws">
+<br /><br /><br>
+<H1 class="mhwsheading" style="font-size:2.4rem;" align="center"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;"><B>Ou</span>r Mission</b></font></h1>
+<img src="./about_files/hwspic.png" class="mhwspic" />
+<div class="mhwstxt">
+<p align="justify" style="position:relative;padding:0 5% 0 5%;font-size:1.2rem;margin-top:-5%;">
+Our mission is to provide hassle-free transportation services with industrial experts on board, making transport logistics more secure, safe and trustworthy.</p>
+</div>
+</div>
+<!-- How we started END -->
+
+
+<!-- Who are we START -->
+<div class="waw">
+<img src="./about_files/wawpic.png" class="wawpic" />
+<div class="wawtxt">
+<H1 class="wawheading" align="left"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;">Ou</span>r Vision</font></h1>
+<p align="justify" style="position:relative;font-size:2rem;margin-top:5%;">
+Our vision is to build a complete supply chain ecosystem that will make solutions available to everyone, everywhere.</p>
+</div>
+</div>
+
+<div class="mwaw">
+<br /><br /><br>
+<H1 class="mwawheading" style="font-size:2.4rem;" align="center"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;">Ou</span>r Vision</font></h1>
+<img src="./about_files/wawpic.png" class="mwawpic" />
+<div class="mwawtxt">
+<p align="justify" style="position:relative;font-size:1.2rem;padding:0 5% 0 5%;margin-top:-16.789%;">
+Our vision is to build a complete supply chain ecosystem that will make solutions available to everyone, everywhere.</p>
+</div>
+</div>
+<!-- Who are we END -->
+
+
+<!-- What we value START -->
+<div class="wwv">
+<img src="./about_files/wwv.jpg" class="wwvpic" />
+<div class="wwvtxt">
+<H1 class="wwvheading" align="left"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;">Va</span>lues we value</font></h3>
+<p align="justify" style="position:relative;font-size:2rem;margin-top:5%;">
+Our customers and our partners are at our top priority. We value them by providing all most all the possible services we can af<font face="calibri">f</font>ord from the best of us. </p>
+</div>
+</div>
+
+<div class="mwwv">
+<br /><br /><br />
+<H1 class="mwwvheading" style="font-size:2.4rem;" align="center"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;">Va</span>lues we value</font></h1>
+<img src="./about_files/waw.jpg" class="mwwvpic" />
+<div class="mwwvtxt">
+<p align="justify" style="position:relative;margin-top:5%;padding:0 5% 0 5%;margin-top:0;font-size:1.2rem;">
+Our customers and our partners are at our top priority. We value them by providing all most all the possible services we can af<font face="calibri">f</font>ord from the best of us. </p>
+</div>
+</div>
+<!-- What we value END -->
+
+
+<div class="xtraspace xxtraspace"><br><br>
+<br><br>
+<br><br></div>
+
+
+<!-- Statistics START -->
+<div style="position:relative;display:box;width:100%;height:auto;clear:both;">
+<br /><br /><br>
+
+<div id="statistics">
+  <div><center><img src="./about_files/fe1.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>&nbsp;Hassle-Free</h1>Book the required category<br> vehicle in seconds</center></p></div>
+
+  <div><center><img src="./about_files/fe2.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Safety & Security</h1>Delivery by experienced drivers<br> with OTP confirmation at the<br> time of pickup and delivery</center></p></div>
+
+  <div><center><img src="./about_files/fe3.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Facilitates Growth</h1>Now make multiple<br> pickups/deliveries in a<br> day hassle-free</center></p></div>
+</div>
+
+<div class="xtraspace xxtraspace"><br><br><br><br><br><br></div>
+
+<div id="statistics">
+  <div><center><img src="./about_files/fe4.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Transparent Pricing</h1><center>No negotiation, <br>bargaining, and haggling<br> with the user</center></p></div>
+
+  <div><center><img src="./about_files/fe5.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Quick and Real-Time Delivery</h1><center>No waiting,<br> book the nearest vehicle.<br> Track using the mobile app</center></p></div>
+
+  <div><center><img src="./about_files/fe6.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Reliable</h1>Dependable delivery<br> by category special drivers</center></p></div>
+</div>
+
+<div id="mstatistics">
+  <div><center><img src="./about_files/fe1.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>&nbsp;Hassle-Free</h1>Book the required category vehicle in seconds</center></p></div>
+
+  <div><center><img src="./about_files/fe6.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Reliable</h1>Dependable delivery by category special drivers</center></p></div>
+</div>
+
+<br><br><br>
+
+<div id="mstatistics">
+  <div><center><img src="./about_files/fe3.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Facilitates Growth</h1>Now make multiple pickups/deliveries in a day hassle-free</center></p></div>
+
+  <div><center><img src="./about_files/fe4.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Transparent Pricing</h1><center>No negotiation, bargaining, and haggling with the user</center></p></div>
+</div>
+
+<br><br><br>
+
+<div id="mstatistics">
+  <div><center><img src="./about_files/fe5.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Quick and Real-Time Delivery</h1><center>No waiting, book the nearest vehicle. Track using the mobile app</center></p></div>
+
+  <div><center><img src="./about_files/fe2.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Safety & Security</h1>Delivery by experienced drivers with OTP confirmation at the time of pickup and delivery</center></p></div>
+</div>
+
+</div>
+<!-- Statistics END -->
+
+
+<div class="xtraspace xxtraspace"><br><br>
+<br><br><br></div>
+
+
+<!-- Registration Section START -->
+<div class="regsection">
+<br /><br /><br>
+<div id="main-flex">
+<div id="child-flexi1" onclick="location.href='./register/vendor.html'" onmouseover="bgchnger(1);" onmouseout="bgchnger(4);" style="background-color:black;color:#4297bf;"><div class="zoomflexi1"><img src="./common/gear.png" width="98px" height="94px" align="middle"><br><br><center><span style="margin-left:-53%;width:auto;font-family:Nexa;font-size:2em;">Register as a</span><br><span style="margin-left:-53%;width:auto;font-family:Nexa;font-size:2em;"> Vendor</span></FONT></center></div></div>
+<div id="child-flexi2" onclick="location.href='contact.html'" onmouseover="bgchnger(2);" onmouseout="bgchnger(5);" style="background-color:#4297bf;"><div class="zoomflexi2"><img src="./common/gear-black.png" width="98px" height="94px" align="middle"><br><br><center><span style="margin-left:-53%;width:auto;font-family:Nexa;font-size:2em;">Contact Us</span></FONT></center></div></div>
+<div id="child-flexi3" onclick="location.href='./register/driver.html'" onmouseover="bgchnger(3);" onmouseout="bgchnger(6);" style="background-color:black;color:#4297bf"><div class="zoomflexi3"><img src="./common/gear.png" width="98px" height="94px" align="middle"><br><br><center><span style="margin-left:-53%;width:auto;font-family:Nexa;font-size:2em;">Register as a</span><br><span style="margin-left:-53%;width:50%;font-family:Arial;font-size:1.5em;"> &ensp;<B>Delivery Partner</b></span></FONT></center></div></div>
+</div>
+</div>
+
+<div class="mregsection">
+<br /><br /><br />
+<div class="containner"> 
+<div class="slider">
+
+<div class="box1 box" style="cursor:pointer;" onclick="window.location.href='contact.html'">
+<img src="./common/contact.png" width="100%" height="10%" />
+</div>
+                                
+<div class="box2 box" style="cursor:pointer;" onclick="window.location.href='./register/driver.html'">
+<img src="./common/delivery-partner.png" width="100%" height="10%" />
+</div>
+
+<div class="box3 box" style="cursor:pointer;" onclick="window.location.href='./register/vendor.html'">
+<img src="./common/business.png" width="100%" height="10%" />
+</div>
+
+<div class="box4 box" style="cursor:pointer;" onclick="window.location.href='contact.html'">
+<img src="./common/contact.png" width="100%" height="10%" />
+</div>
+
+<div class="box5 box" style="cursor:pointer;" onclick="window.location.href='./register/driver.html'">
+<img src="./common/delivery-partner.png" width="100%" height="10%" />
+</div>
+
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff"/></svg>
+<div class="trail" style="display:none;">
+<div class="box1 active">1</div>
+<div class="box2">2</div>
+<div class="box3">3</div>
+<div class="box4">4</div>
+<div class="box5">5</div>
+</div>
+
+</div>   
+<br><br><br><br /><br /><br />
+</div>
+<!-- Registration Section END -->
+
+</div>
+<!-- CONTENT END -->
+
+
+<div class="xtraspace xxtraspace"><br><br><br><br>
+<br><br><br><br>
+<br><br></div>
+
+
+<!-- THE FOOTER -->
+<div id="footer0" class="container-fluid" style="color:silver;">
+<br>
+<div style="position:relative;width:26.01%;margin-left:2%;float:left;padding:10px;font-family:Nexa;">
+<div style="border-right:1px groove #70a9b6;">
+<div title="MoveTez" style="float:left;width:80.897%;height:auto;"><a href="index.html"><img src="./common/logod.png" align="top" width="100%" /></a></div>
+<div style="position:relative;font-size:18px;clear:both;margin-left:4%;"><br />Safe Chalega, Tez Bhadega</div>
+<div style="position:relative;clear:both;float:left;left:22.01%;"><br />
+<div style="display:flex;flex-direction:row;">
+<div style="background-color:#1ed4ed;width:25px;height:25px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+</div>
+</div>
+<div style="position:relative;font-size:13px;clear:both;color:white;margin-left:3.5%;"><br /><br /><br />
+<br />
+</div>
+</div>
+</div>
+<div style="position:relative;width:63%;float:left;margin-left:5.65%;padding:0px;font-family:Nexa;">
+<div style="position:relative;float:left;width:17.945%;">
+<h3>Company</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="about.html">About Us</a><br>
+<a style="text-decoration:none;" href="index.html#pricing">Pricing</a><br>
+<a style="text-decoration:none;" href="">O<font face="arial" size="3em">ff</font>ers</a><br></div>
+</div>
+<div style="position:relative;left:2%;float:left;width:25%;">
+<h3>Service</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="./register/vendor.html">Vendors<br>
+<a style="text-decoration:none;" href="./register/driver.html">Drivers<br>
+<a style="text-decoration:none;" href="movnpack.html">Movers & Packers</a><br></div>
+</div>
+<div style="position:relative;margin-left:2%;float:left;width:15%;">
+<h3>Resources</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="blog.html">Blog</a><br><br>
+<img src="./common/briefcase.png" width="33px" height="30px" align="top" />&ensp;<a style="text-decoration:none;" href="hiring.html">Hiring</a><br></div>
+</div>
+<div style="position:relative;margin-right:8.439%;margin-top:-3.9567%;float:right;width:24.28%;">
+<span title="Download for Android" style="width:100%;height:auto;"><a href=""><img src="./common/appicoo.png" align="top" width="100%" /></a></span>
+</div>
+</div>
+<div style="position:relative;left:10%;width:40%;float:left;">
+<br><br><br><br>
+</div>
+<div style="position:relative;display:block;clear:both;width:100%;background:#2b2e33;height:auto;">
+<span style="position:relative;font-size:16px;float:left;color:white;margin-left:3.5%;">
+<a href="./privacy.html" style="text-decoration:none;"><font color="white">Privacy Policy</font></a>&ensp;&ensp;<a href="./tos.html" style="text-decoration:none;"><font color="white">Terms of Service</font></a>
+</span>
+<center><font size="3px">Copyright &copy; 2021-22 All Rights Reserved.</font><center>
+<span style="position:relative;font-size:16px;float:right;margin-top:-1.5%;margin-right:3%;color:white;">
+<a href="./sitemap.php" style="text-decoration:none;"><font color="white">Sitemap</font></a>
+</span>
+<br />
+</div>
+</div>
+
+<div id="footer1" class="container-fluid" style="color:silver;">
+<br />
+<div style="position:relative;display:block;clear:both;width:100%;font-family:Nexa;">
+<div title="MoveTez" style="float:left;margin:0 0 0 5%;width:48%;height:auto;"><a href="index.html"><img src="./common/logod.png" align="top" width="100%" /></a></div>
+<div style="float:right;margin-right:8.9%;margin-top:-5%;width:30%;"><br />
+<a href=""><img src="./common/appicoo.png" align="top" width="100%" /></a>
+</div><br><br>
+<div style="position:relative;font-size:14px;margin-left:9.29%;"><br />Safe Chalega, Tez Bhadega</div><br />
+<div style="position:relative;display:block;width:100%;">
+<div style="display:flex;flex-direction:row;margin-left:17%;width:25%;">
+<div style="background-color:#1ed4ed;width:25px;height:25px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+</div>
+</div>
+</div>
+<br /><br>
+<div style="position:relative;display:block;clear:both;width:100%;font-family:Nexa;">
+<div style="position:relative;float:left;width:45%;margin-left:8%;">Company<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="about.html">About Us</a><br>
+<a href="index.html#pricing">Pricing</a><br>
+<a href="">Of<font face="cambria">f</font>ers</a></div>
+</div>
+<div style="position:relative;float:right;width:35.5956%;margin-right:3%;">Resources<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="">Blog</a><br>
+<br>
+<a href=""><img src="./common/briefcase.png" width="30px" height="25px" align="top" /> Hiring</a></div>
+</div>
+</div>
+<div style="position:relative;display:block;top:2.4vh;height:auto;clear:both;width:100%;font-family:Nexa;"><br>
+<div style="position:relative;float:left;width:45%;margin-left:8%;">Service<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="./register/vendor.html">Vendors</a><br>
+<a href="./register/driver.html">Drivers</a><br>
+<a href="">Movers &amp; Packers</a></div>
+</div>
+<br><br><br />
+</div>
+<br /><br /><br /><br />
+<div style="position:relative;display:block;clear:both;top:3vh;width:100%;font-family:Nexa;">
+<span style="margin-left:4%;font-size:14px;position:relative;">Privacy Policy</span>
+<span style="margin-left:6%;font-size:14px;position:relative;">Terms Of Service</span>
+<span style="margin-left:7.98%;font-size:14px;position:relative;">Sitemap</span>
+<br /><center>Copyright &copy; 2021-22 All Rights Reserved.</center>
+</div>
+<br /><br />
+</div>
+<!-- THE FOOTER END -->
+
+
+</div>
+<!-- END OF PAGE-CONTAINER -->
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+<script src="./common/slider.js"></script>
+<script type="text/javascript" src="./common/script.js"></script>
+<script type="text/javascript" src="./common/mscript.js"></script>
+<script>
+function bgchnger(x)
+{
+  if(x == 1)
+  {
+    document.getElementById("child-flexi1").style.background = "#666666";
+  }
+  else if(x == 2)
+  {
+    document.getElementById("child-flexi2").style.background = "#7ab6d1";
+  }
+  else if(x == 3)
+  {
+    document.getElementById("child-flexi3").style.background = "#666666";
+  }
+  else if(x == 4)
+  {
+    document.getElementById("child-flexi1").style.background = "#000000";
+  }
+  else if(x == 5)
+  {
+    document.getElementById("child-flexi2").style.background = "#4297bf";
+  }
+  else if(x == 6)
+  {
+    document.getElementById("child-flexi3").style.background = "#000000";
+  }
+}
+</script>
+<script>
+$(function() {
+  var $elements = $('.animateBlock.notAnimated'); //contains elements of nonAnimated class
+  var $window = $(window);
+  $window.on('scroll', function(e) {
+    $elements.each(function(i, elem) { //loop through each element
+      if ($(this).hasClass('animated')) // check if already animated
+        return;
+      animateMe($(this));
+    });
+  });
+});
+ 
+function animateMe(elem) {
+  var winTop = $(window).scrollTop(); // calculate distance from top of window
+  var winBottom = winTop + $(window).height();
+  var elemTop = $(elem).offset().top; // element distance from top of page
+  var elemBottom = elemTop + $(elem).height();
+  if ((elemBottom <= winBottom) && (elemTop >= winTop)) {
+    // exchange classes if element visible
+    $(elem).removeClass('notAnimated').addClass('animated');
+  }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+
+</body>
+</html>

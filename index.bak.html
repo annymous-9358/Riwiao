@@ -1,0 +1,2418 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META charset="UTF-8">
+<META name="viewport" content= "width=device-width, user-scalable=no" initial-scale="1">
+<TITLE>Welcome To MoveTez</title>
+<link rel="stylesheet" type="text/css" href="./common/styles.css">
+<link rel="stylesheet" type="text/css" href="./common/body.css">
+<link rel="stylesheet" type="text/css" href="./common/anim.css">
+<link rel="stylesheet" type="text/css" href="./common/slider.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+/* Media Queries No Need to Set */
+:root {
+  --main-light-color: #ccf3f8;
+  --main-dark-color: #ecebff;
+  --main-background-color: black;
+}
+
+blocckquote {
+  padding: 13px 13px 0px 13px;
+  font-family: arial;
+  line-height: 1.625;
+  position: relative;
+  border: none;
+  width:421px;
+  height:auto;
+}
+
+blocckquote p {
+  position: relative;
+  padding-left:39px;
+  display:block;
+  width:100%;
+  height:400px;
+}
+
+blocckquote p:before {
+  content: "“";
+  font-size: 152px;
+  color: #79b83a;
+  position: absolute;
+  left:-20px;
+  top: 30px;
+  line-height: 0;
+}
+
+.checked {
+  color: orange;
+}
+
+.review-child
+{
+  display: flex;
+  padding:15px;
+  width:100%;
+  height: 300px;
+  border-radius:17px;
+  background: #f9f9f9;
+  opacity:0.6;
+  border: 1px solid black;
+  overflow-wrap: break-word;
+  margin-left:15px;
+  animation: createBox .25s;
+}
+
+.review-container
+{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y:hidden;
+  overflow-x:scroll;
+  display:flex;
+  margin-left:1.5%;
+  width:96.5%;
+  cursor:all-scroll;
+}
+
+.review-container::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+#rprev
+{
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  float:left;
+  left:0px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 10px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+#rnext 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  float:right;
+  right:0px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 10px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.cardpkt
+{
+  background-color:#1ed4ed;
+}
+
+/* Media Queries for smartphones */
+@media only screen and (max-width: 768px) {
+#scrollingbar
+{
+  display:none;
+}
+
+.msafedeli
+{
+  position:relative;
+  display:block;
+  clear:both;
+  height:auto;
+  width:100%;
+}
+
+.safedeli
+{
+  display:none;
+}
+
+.msafedelitxt
+{
+  position:relative;
+  background:#a1e8f2;
+  width:92%;
+  font-size:18px;
+  margin:5px 2% 0 0%;
+  line-height:40px;
+  font-family:Nexa;
+  padding:4% 2% 3% 2%;
+  border-radius:5px;
+}
+
+.mwawi
+{
+  position:relative;
+  display:block;
+  clear:both;
+  height:auto;
+  width:100%;
+}
+
+.wawi
+{
+  display:none;
+}
+
+.mwawipic
+{
+  position:relative;
+  margin-left:0%;
+  margin-top:-13%;
+}
+
+.mwawitxt
+{
+  position:relative;
+  width:92%;
+  font-size:18px;
+  margin:-25% 2% 0 0%;
+  line-height:30px;
+  font-family:Nexa;
+  padding:0 2% 3% 2%;
+}
+
+.mwaui
+{
+  position:relative;
+  display:block;
+  clear:both;
+  height:auto;
+  width:100%;
+}
+
+.waui
+{
+  display:none;
+}
+
+.mwauipic
+{
+  position:relative;
+  margin-left:0%;
+  margin-top:-5%;
+}
+
+.mwauitxt
+{
+  position:relative;
+  width:92%;
+  font-size:18px;
+  margin:0 2% 0 0;
+  line-height:30px;
+  font-family:Nexa;
+  padding:0 2% 0 2%;
+}
+
+.productsec
+{
+  display:none;
+}
+
+.mproductsec
+{
+  position:relative;
+  clear:both;
+  display:block;
+  height:auto;
+  width:100%;
+  padding:2% 0 2% 0;
+}
+
+.productcards
+{
+  display:none;
+}
+
+.mselectvcledock
+{
+  position:relative;
+  display:block;
+  width:100%;
+  height:auto;
+  clear:both;
+  background:#ecebff;
+  margin-top:12%;
+}
+
+.selectvcledock
+{
+  display:none;
+}
+
+.marquee
+{
+  display:flex;
+  flex-direction:row;
+}
+
+.mproduct
+{
+  display:inline-block;
+  background:#25cede;
+  padding:4%;
+  border-radius:7px;
+  cursor:pointer;
+}
+
+.vcleinfoimg
+{
+  position:relative;
+  width:80%;
+  float:left;
+  margin-top:3%;
+  margin-left:13%;
+  height:340px;
+}
+
+.vcleinfotxt
+{
+  position:relative;
+  width:100%;
+  font-size:18px;
+  border-radius:15px;
+  margin:-3.05% 0 0 3%;
+  clear:both;
+  height:auto;
+  padding:0.04% 2% 3% 2%;
+}
+
+.vcleinfoterm
+{
+  position:relative;
+  width:100%;
+  font-size:12px;
+  border-radius:15px;
+  height:auto;
+  padding:4% 2% 3% 2%;
+}
+
+.left-point{
+  width: 0;
+  height: 0;
+  border-left: 10vh solid transparent;
+  border-right: 10vh solid transparent;
+  border-top: 17vh solid var(--main-dark-color);
+  position: absolute;
+  top: -6%;
+  left: 43.89%;
+  transform: rotate(180deg);
+}
+
+.ourservices
+{
+  display:none;
+}
+
+.mourservices {
+  position:relative;
+  display:block;
+  width:100%;
+  clear:both;
+}
+
+.mregsection
+{
+  position:relative;
+  display:block;
+  width:98.70009%;
+  margin-left:0.58159%;
+  height:auto;
+  clear:both;
+}
+
+.regsection
+{
+  display:none;
+}
+}
+
+/* Media Queries for Tablet/Phablet/iPads in Landscape Mode */
+@media only screen and (min-width : 769px) and (max-width : 1024px) and (orientation : landscape) {
+
+.mregsection
+{
+  display:none;
+}
+
+.regsection
+{
+  position:relative;
+  display:box;
+  width:100%;
+  height:auto;
+  clear:both;
+}
+}
+
+/* Media Queries for Tablet/iPads in Portrait Mode */
+@media only screen and (min-width : 769px) and (max-width : 1024px) and (orientation : portrait) {
+
+.mregsection
+{
+  position:relative;
+  display:block;
+  width:98.79999%;
+  margin-left:1.159%;
+  height:auto;
+  clear:both;
+  font-size:57%;
+}
+
+.regsection
+{
+  display:none;
+}
+}
+
+/* Media Queries for High-Pixel-Smaller-Screen QHD/4K displays like Larger Palmtop/Macbook/Convertible laptops */
+@media only screen and (min-width : 1025px) and (max-width : 1224px) { }
+
+/* Media Queries for Desktop/Laptops */
+@media only screen and (min-width : 1225px) {
+.productsec {
+  position:relative;
+  display:block;
+  width:100%;
+  height:625px;
+  clear:both;
+}
+
+.mproductsec
+{
+  display:none;
+}
+
+.productcards
+{
+  display:flex;
+  flex-direction:row;
+  float:left;
+  margin-top:-11%;
+  margin-left:9%;
+}
+
+.card-carousel .my-card {
+  height: 25rem;
+  width: 22rem;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  border-radius:2rem;
+  cursor: pointer;
+  pointer-events: none;
+  background: #25cede;
+  /* background: linear-gradient(to top, #2e5266, #6e8898); */
+  transition: 1s;
+}
+
+.card-carousel .my-card:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.3);
+  bottom: -5rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+  border-radius:2rem;
+}
+
+.card-carousel .my-card:nth-child(0):before {
+  content: '0';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  border-radius:2rem;
+  color: #fff;
+  width:100%;
+}
+
+.card-carousel .my-card:nth-child(1):before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  border-radius:2rem;
+  color: #fff;
+  width:100%;
+  padding: 3px 1px 2px 1px;
+}
+
+.card-carousel .my-card:nth-child(2):before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  border-radius:2rem;
+  width:100%;
+  padding: 3px 1px 2px 1px;
+}
+
+.card-carousel .my-card:nth-child(3):before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  border-radius:2rem;
+  font-weight: 300;
+  color: #fff;
+  width:100%;
+  padding: 3px 1px 2px 1px;
+}
+
+.card-carousel .my-card:nth-child(4):before {
+  position: absolute;
+  top: 50%;
+  border-radius:2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  width:100%;
+  padding: 3px 1px 2px 1px;
+}
+
+.card-carousel .my-card:nth-child(5):before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius:2rem;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  width:100%;
+  padding: 3px 1px 2px 1px;
+}
+
+.card-carousel .my-card:nth-child(6):before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius:2rem;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  width:100%;
+  padding: 3px 1px 2px 1px;
+}
+
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.my-card-content
+{
+word-break: break-all;
+width:100%;
+height:100%;
+}
+
+.selectvcledock
+{
+  position:relative;
+  display:block;
+  width:110%;
+  left:-6%;
+  height:500px;
+  clear:both;
+  background:#ecebff;
+}
+
+.mselectvcledock
+{
+  display:none;
+}
+
+.safedeli
+{
+  position:relative;
+  display:block;
+  width:100%;
+  height:625px;
+  clear:both;
+}
+
+.msafedeli
+{
+  display:none;
+}
+
+.safedelimg
+{
+  position:relative;
+  width:44%;
+  float:left;
+  margin-left:3%;
+  height:480px;
+}
+
+.safedelitxt
+{
+  position:relative;
+  background:#a1e8f2;
+  width:30%;
+  font-size:18px;
+  border-radius:15px;
+  float:right;
+  margin:0 13% 0 0;
+  line-height:40px;
+  height:255px;
+  font-family:Nexa;
+  padding:4% 2% 3% 2%;
+}
+
+.safedelihding
+{
+  position:relative;
+  left:4%;
+  width:auto;
+  padding:18px 13px 10px 15px;
+  background:#395062;
+  color:white;
+  top:-5.9%;
+  border-radius:5px;
+  margin-left:-14px;
+}
+
+.wawi
+{
+  position:relative;
+  display:box;
+  width:100%;
+  height:500px;
+  clear:both;
+}
+
+.mwawi
+{
+  display:none;
+}
+
+.wawipic
+{
+  position:relative;
+  margin-left:0%;
+  float:left;
+  height:545px;
+  width:44%;
+  margin-top:-2.599%;
+  border-top-left-radius:13px;
+  border-bottom-right-radius:13px;
+}
+
+.wawitxt
+{
+  position:relative;
+  margin-right:4%;
+  font-family:Times New Roman;
+  font-size:19px;
+  color:black;
+  float:right;
+  height:auto;
+  margin-top:1%;
+  width:44%;
+  padding:1%;
+  opacity:0.9;
+  border-top-left-radius:13px;
+  border-bottom-right-radius:13px;
+}
+
+.waui
+{
+  position:relative;
+  display:box;
+  width:100%;
+  height:500px;
+  clear:both;
+}
+
+.mwaui
+{
+  display:none;
+}
+
+.wauipic
+{
+  position:relative;
+  margin-left:3.19%;
+  float:left;
+  height:545px;
+  width:44%;
+  margin-top:-2.599%;
+  border-top-left-radius:13px;
+  border-bottom-right-radius:13px;
+}
+
+.wauitxt
+{
+  position:relative;
+  margin-right:4%;
+  font-family:Times New Roman;
+  font-size:19px;
+  color:black;
+  float:right;
+  height:auto;
+  margin-top:1%;
+  width:44%;
+  padding:1%;
+  opacity:0.9;
+  border-top-left-radius:13px;
+  border-bottom-right-radius:13px;
+}
+
+.vcleinfoimg
+{
+  position:relative;
+  margin-top:2.9298%;
+  width:30%;
+  float:left;
+  margin-left:13%;
+  height:340px;
+}
+
+.vcleinfotxt
+{
+  position:relative;
+  width:30%;
+  font-size:18px;
+  border-radius:15px;
+  float:left;
+  margin:0 0 0 3%;
+  height:auto;
+  padding:4% 2% 3% 2%;
+}
+
+.vcleinfoterm
+{
+  position:relative;
+  width:50%;
+  font-size:18px;
+  border-radius:15px;
+  float:right;
+  margin:-4% 5% 0 0;
+  height:auto;
+  padding:4% 2% 3% 2%;
+}
+
+.left-point{
+  width: 0;
+  height: 0;
+  border-left: 10vh solid transparent;
+  border-right: 10vh solid transparent;
+  border-top: 17vh solid var(--main-dark-color);
+  position: absolute;
+  top: -8%;
+  left: 43.89%;
+  transform: rotate(180deg);
+}
+
+
+.ourservices
+{
+  position:relative;
+  display:block;
+  width:200%;
+  clear:both;
+  margin-left:5.67%;
+}
+
+.mourservices
+{
+  display:none;
+}
+
+.oneservice
+{
+  height:170px;
+  width:7.56%;
+  margin-left:2%;
+  background:#25ccdf;
+  border-radius:50%;
+}
+
+.oneserviceimg
+{
+  cursor:pointer;
+  width:212px;
+  height:177px;
+}
+
+.altdialog {
+  width: 2px;
+  height: 0;
+  border-left: 1vh solid transparent;
+  border-right: 1vh solid transparent;
+  border-top: 3vh solid black;
+  position: absolute;
+  top: -84.5%;
+  left: 2.67%;
+  transform: rotate(180deg);
+}
+
+.npactive
+{
+  background:#cfcfcf;
+}
+
+.helpframe
+{
+  position:relative;
+  width:100%;
+  height:670px;
+  display:block;
+  border-style:none;
+  margin:3px 0 0 0;
+}
+
+.regsection
+{
+  position:relative;
+  display:box;
+  width:100%;
+  height:515px;
+  clear:both;
+}
+
+.mregsection
+{
+  display:none;
+}
+
+#scrollingbar
+{
+  position:fixed;
+  height:75%;
+  left:0%;
+  /* border-top-right-radius:3rem; */
+  border-bottom-right-radius:1rem;
+  top:15%;
+  width:3%;
+  display:none;
+  background:#abb8ae;
+  animation: scrollingbarevolve;
+  animation-duration:0.678s;
+  background-size: contain;
+}
+
+@keyframes scrollingbarevolve {
+  from { background:white; }
+  to { background:#abb8ae; }
+}
+
+.verylong {
+  height: 2000px;
+}
+
+svg {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+}
+
+#main-flex {
+  width:96.785%;
+  height: 400px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-direction: row;
+}
+
+#child-flexi1, #child-flexi3
+{
+  width:40%;
+  padding:8% 0 10% 13%;
+  cursor: pointer;
+}
+
+#child-flexi1:hover .zoomflexi1
+{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+#child-flexi3:hover .zoomflexi3
+{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.zoomflexi1
+{
+  transition: transform .3s;
+}
+
+.zoomflexi3
+{
+  transition: transform .3s;
+}
+
+@media only screen and (max-width:1254px) {
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left:-35.9498%;
+  width:200%;
+}
+
+.dialog1{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 52.4%;
+  left: 4.5%;
+  transform: rotate(180deg);
+}
+
+.dialog2{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 52.4%;
+  left: 14.5%;
+  transform: rotate(180deg);
+}
+
+.dialog3{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 52%;
+  left: 23.85%;
+  transform: rotate(180deg);
+}
+
+.dialog4{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 52.9%;
+  left: 34.1%;
+  transform: rotate(180deg);
+}
+}
+@media only screen and (min-width:1255px) and (max-width:1500px) {
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left:-37.9798%;
+  width:200%;
+}
+
+.dialog1{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 52.4%;
+  left: 4.5%;
+  transform: rotate(180deg);
+}
+
+.dialog2{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 52.4%;
+  left: 14.5%;
+  transform: rotate(180deg);
+}
+
+.dialog3{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 52%;
+  left: 23.85%;
+  transform: rotate(180deg);
+}
+
+.dialog4{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 52.9%;
+  left: 34.1%;
+  transform: rotate(180deg);
+}
+}
+@media only screen and (min-width:1501px) {
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left:-40.09498%;
+  width:200%;
+}
+
+.dialog1{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 55%;
+  left: 4.5%;
+  transform: rotate(180deg);
+}
+
+.dialog2{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 53%;
+  left: 14.5%;
+  transform: rotate(180deg);
+}
+
+.dialog3{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 55%;
+  left: 23.85%;
+  transform: rotate(180deg);
+}
+
+.dialog4{
+  width: 2px;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid var(--main-light-color);
+  position: absolute;
+  top: 54.359%;
+  left: 34.1%;
+  transform: rotate(180deg);
+}
+}
+}
+
+</style>
+<script>
+//Page on top during unload before reload
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}
+</script>
+<script>
+//Window Reload on Page Resize in desktops
+var windowsize = window.matchMedia("(min-width: 1225px)");
+function onresizer() {
+if(windowsize.matches)
+{
+  onresize();
+}
+}
+
+function onresize()
+{
+$(window).bind('resize', function(e)
+{
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(function()
+  {
+    this.location.reload(false); /* false to get page from cache */
+  }, 100);
+});
+}
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+}
+</script>
+<script>
+/* THIS SECTION IS FOR USER QUOTES WHICH IS COMMENTED IN CODE
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 500) {
+        $('.review-child').fadeIn();
+    } else {
+        $('.review-child').fadeOut();
+    }
+});
+UNCOMMENTING THE PIECE OF CODE MAY MAKE IT READY FOR EXECUTION */
+</script>
+</head>
+<BODY link="black" alink="black" vlink="black" onLoad="onresizer();windowFunction(x);">
+
+<!-- PAGE-CONTAINER START -->
+<div id="page-container">
+
+
+<!-- HALF PAGE START -->
+<!-- for desktop/laptop start -->
+<div id="halfpage">
+<!-- HEADER START -->
+<div class="header">
+<span alt="MoveTez" style="float:left;width:15%;height:97px;"><a href="index.html"><img src="./common/logo.png" align="top" width="100%" /></a></span>
+<span id="hderlinks" style="float:left;padding:1% 0 0 15%;width:70%;">
+<B><a href="about.html" style="font-family:Nexa;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">About </span>Us</a><a id="producthder" href="#products-start" style="font-family:Nexa;padding-left:10%;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">Produc</span>ts</a><a id="pricinghder" href="#pricing" style="font-family:Nexa;padding-left:10%;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">Prici</span>ng</a></B>
+<button id="callusbtn" role="button" onclick="location.href='contact.html'" title="Contact Us">Contact</button><button id="rgisterbtn" onclick="location.href='#register-section'" role="button" title="Register">Register</button></span>
+<!-- HIDDEN STICKY NAVBAR START -->
+<div id="supernavi">
+<div id="navbar">
+<div id="naavbar" style="display:none;padding:10px;">
+<span style="float:left;margin-top:-1.188%;width:6%;height:52px;"><a href="index.html"><img alt="MoveTez" src="./common/logobg.png" align="top" width="100%" /></a>&ensp;&ensp;</span>
+<B><a href="about.html" style="text-decoration:none;" title="">&ensp;&ensp;<span class="navitxt">About </span>Us&ensp;&ensp;</a>
+<a id="productnaavbar" href="#products-start" style="text-decoration:none;" title=""><span class="navitxt">Product</span>s&ensp;&ensp;</a>
+<a id="pricingnaavbar" href="#pricing" style="text-decoration:none;" title=""><span class="navitxt">Pricin</span>g&ensp;&ensp;</a>
+<span style="float:right;margin-right:1%;">
+<button class="contactbutton" onclick="location.href='contact.html'" type="button">Contact</button>
+&ensp;&ensp;
+&ensp;&ensp;
+&ensp;&ensp;
+&ensp;&ensp;
+<button class="registerbutton" onclick="location.href='#register-section'" type="button">Register</button>
+</span>
+</div>
+</div>
+</div>
+<!-- HIDDEN STICKY NAVBAR END -->
+<!-- HEADER CONTENT START -->
+<div style="position:relative;display:block;float:right;padding-top:5.23%;padding-bottom:10%;margin-top:12%;padding-left:2%;width:46%;right:5%;font-size:4.6em;">
+<center><font color="#395062"><B>Your Goods,</b></font><br>
+<font color="#395062"><B>Our Solutions</b></font><br>
+<font color="#1ed4ed"><B>Delivered</b></font></center>
+</div>
+<div style="position:relative;display:block;float:left;left:-2%;margin-top:0%;width:47.13%;height:585px;">
+<img src="./index_files/halfpage.png" height="100%" width="100%" />
+<br /><br />
+<!-- <img src="./index_files/truck.jpg" id="movingdot" style="margin-left:10px;" height="90px" width="150px" />  -->
+</div>
+<!-- HEADER CONTENT END -->
+</div>
+<!-- HEADER END -->
+</div>
+<!-- for desktop/laptop end -->
+<!-- for mobile start -->
+<div id="mhalfpage" class="mhalfpage">
+<div id="mheader">
+<span alt="MoveTez" style="float:right;width:35%;margin:0.0119% 2% 0 0;height:50px;"><a href="index.html"><img src="./common/logo.png" align="top" width="100%" height="100%" /></a></span>
+</div>
+<div id="menuBtn"></div>
+<div id="msupernavi">
+<div id="mnavbar">
+<div id="mnaavbar" style="display:none;padding:10px;">
+<span style="float:right;width:35%;margin-right:30.36%;height:50px;margin-top:-0.789%;"><a href="index.html"><img alt="MoveTez" src="./common/logo.png" align="top" width="100%" height="100%" /></a></span>
+<!-- <span style="float:right;margin-right:1%;">
+<button class="mregisterbutton" onclick="location.href='index.html#register-section'" type="button">Register</button> -->
+</span>
+</div>
+</div>
+</div>
+<ul id="mnav">
+<li class="mnavli"><a href="about.html" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">About us</a></li>
+<li class="mnavli"><a href="./index_files/mpricing.html" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">Pricing</a></li>
+<li class="mnavli"><a href="./index_files/mproducts.html" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">Products</a></li>
+<li class="mnavli"><a href="contact.html" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">Contact</a></li>
+</ul>
+<div id="mobileHeadContent">
+<div id="mhalfimage"><img src="./index_files/halfpage.png" /></div>
+<div id="mobileContent" style="margin-top:-12%;background: linear-gradient(180deg, #ffffff 40%, #395062 50%);opacity:0.8;">
+<center><B><span style="position:relative;font-size:6vh;color:black;">Your Goods</span></b><br>
+<B><span style="position:relative;font-size:4vh;">Our Solutions</span></b><br>
+<B><span style="position:relative;color:#1ed4ed;font-size:7vh;">Delivered</span></b></center>
+</div>
+</div>
+</div>
+<!-- for mobile end -->
+<!-- HALF PAGE END -->
+
+
+<div class="xtraspace xxtraspace"><br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br></div>
+
+
+<!-- CONTENT START -->
+<div id="content">
+<!-- WARNING DONT DISTURB THE HALF-PAGE-CONTENT NAVBAR PAGE-CONTAINER DIV -->
+
+
+<div class="xtraspace xxtraspace"><br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br></div>
+
+
+<!-- Promo Start -->
+<div class="safedeli">
+<br /><br />
+<div class="safedelimg notAnimated animateBlock leftAlign left">
+<img src="./index_files/safedeli.jpg" height="100%" width="100%" />
+</div>
+<span class="safedelihding notAnimated animateBlock right"><font face="Verdana" size="6px">Safe and Secure Delivery</font></span>
+<div class="safedelitxt notAnimated animateBlock rightAlign right">
+<U><font color="#2573b8">Step 1</font></u> Select your required vehicle.<br>
+<U><font color="#2573b8">Step 2</font></u> Select your service.<br>
+<U><font color="#2573b8">Step 3</font></u> Select material category.<br>
+<U><font color="#2573b8">Step 4</font></u> Select your pickup and drop location.<br>
+<U><font color="#2573b8">Step 5</font></u> Con<font size='4px'>f</font>irm<br>
+</div>
+</div>
+
+<div class="msafedeli">
+<br /><br /><br /><br />
+<center><span class="msafedelihding notAnimated animateBlock right"><font face="Verdana" size="5px">Safe and Secure Delivery</font></span></center>
+<div class="msafedelimg notAnimated animateBlock leftAlign left"><br>
+<img src="./index_files/safedeli.jpg" height="100%" width="100%" />
+</div>
+<div class="msafedelitxt notAnimated animateBlock rightAlign right">
+<U><font color="#2573b8">Step 1</font></u> Select your required vehicle.<br>
+<U><font color="#2573b8">Step 2</font></u> Select your service.<br>
+<U><font color="#2573b8">Step 3</font></u> Select material category.<br>
+<U><font color="#2573b8">Step 4</font></u> Select your pickup and drop location.<br>
+<U><font color="#2573b8">Step 5</font></u> Con<font size='4px'>f</font>irm<br>
+</div>
+</div>
+<!-- Promo END -->
+
+
+<br><br>
+<br><br>
+
+
+<a id="scroll-to"></a>
+<!-- Who are we INDEX Start -->
+<div class="wawi">
+<img src="./index_files/wawipic.png" class="wawipic notAnimated animateBlock leftAlign right" />
+<div class="wawitxt notAnimated animateBlock rightAlign left">
+<H1 class="wawiheading notAnimated animateBlock right" align="left"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;">Ou</span>r Mission</font></h1>
+<p align="justify" style="font-family:Nexa;font-size:2rem;position:relative;margin-top:5%;">
+Our mission is to provide hassle-free transportation services with industrial experts on board, making transport logistics more secure, safe and trustworthy.</p>
+</div>
+</div>
+
+<div class="mwawi">
+<br /><br /><br />
+<H1 class="mwawiheading" align="center"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;">Ou</span>r Mission</font></h1>
+<div class="mwawipic notAnimated animateBlock leftAlign left">
+<img src="./index_files/wawipic.png" height="100%" width="100%" />
+</div>
+<div class="mwawitxt notAnimated animateBlock rightAlign right">
+<p align="justify">
+Our mission is to provide hassle-free transportation services with industrial experts on board, making transport logistics more secure, safe and trustworthy.</p>
+</div>
+</div>
+<!-- Who are we INDEX END -->
+
+
+<!-- Who are Us INDEX Start -->
+<div class="waui">
+<img src="./index_files/wauipic.png" class="wauipic notAnimated animateBlock leftAlign right" />
+<div class="wauitxt notAnimated animateBlock rightAlign left">
+<H1 class="wauiheading notAnimated animateBlock left" align="left"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;">Ou</span>r Vision</font></h3>
+<p align="justify" style="font-family:Nexa;font-size:2rem;position:relative;margin-top:5%;">
+Our vision is to build a complete supply chain ecosystem that will make solutions available to everyone, everywhere.</p>
+</div>
+</div>
+
+<div class="mwaui">
+<br><br>
+<H1 align="center"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;">Ou</span>r Vision</font></h1>
+<div class="mwauipic notAnimated animateBlock leftAlign left">
+<img src="./index_files/wauipic.png" width="100%" height="100%" />
+</div>
+<div class="mwauitxt">
+<p align="justify">
+Our vision is to build a complete supply chain ecosystem that will make solutions available to everyone, everywhere.</p>
+</div>
+<br /><br><br /><br>
+</div>
+<!-- Who are Us INDEX END -->
+<a id="scroll-too"></a>
+
+
+<!-- Select Vehicle Start -->
+<a id="products-start"></a>
+<div class="productsec">
+<br /><br /><br>
+<div style="width:auto;height:auto;padding: 2% 1% 2% 1%;">
+<div class="card-carousel">
+<div class="my-card" onclick="cauroselchng(1);" id="1">
+<div class="my-card-content">
+<br>
+<center><img src="./index_files/twowheelc.png" width="237px" height="195px" /></center>
+<B><font size="8rem"><center>2 Wheeler</center></font>
+<center>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Length&ensp;&ensp;</td>
+<td>Width&ensp;&ensp;</td>
+<td>Height&ensp;&ensp;</td>
+</tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<tr>
+<td>40 CM</td>
+<td>40 CM</td>
+<td>40 CM</td>
+</tr>
+</table>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Max. loading Capacity&ensp;</td>
+<td> </td>
+<td>20KG</td>
+</tr>
+</table>
+</center>
+</B>
+</div>
+</div>
+<div class="my-card" onclick="cauroselchng(2);" id="2">
+<div class="my-card-content">
+<br>
+<center><img src="./index_files/champtruckc.png" width="225px" height="193px" /></center>
+<B><font size="6rem"><center>3 Wheeler Champion</center></font>
+<center>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Length&ensp;&ensp;</td>
+<td>Width&ensp;&ensp;</td>
+<td>Height&ensp;&ensp;</td>
+</tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<tr>
+<td>6 FT</td>
+<td>4.8 FT</td>
+<td>4.8 FT</td>
+</tr>
+</table>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Max. loading Capacity&ensp;</td>
+<td> </td>
+<td>500KG</td>
+</tr>
+</table>
+</center>
+</B>
+</div>
+</div>
+<div class="my-card" onclick="cauroselchng(3);" id="3">
+<div class="my-card-content">
+<br>
+<center><img src="./index_files/tatacec.png" width="280px" height="199px" /></center>
+<B><font size="8rem"><center>Tata Ace</center></font>
+<center>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Length&ensp;&ensp;</td>
+<td>Width&ensp;&ensp;</td>
+<td>Height&ensp;&ensp;</td>
+</tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<tr>
+<td>7 FT</td>
+<td>4.8 FT</td>
+<td>4.8 FT</td>
+</tr>
+</table>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Max. loading Capacity&ensp;</td>
+<td> </td>
+<td>850KG</td>
+</tr>
+</table>
+</center>
+</B>
+</div>
+</div>
+<div class="my-card" onclick="cauroselchng(4);" id="4">
+<div class="my-card-content">
+<br>
+<center><img src="./index_files/pickoc.png" width="235px" height="198px" /></center>
+<B><font size="8rem"><center>8 Feet Pickup</center></font>
+<center>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Length&ensp;&ensp;</td>
+<td>Width&ensp;&ensp;</td>
+<td>Height&ensp;&ensp;</td>
+</tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<tr>
+<td>8 FT</td>
+<td>4.8 FT</td>
+<td>5 FT</td>
+</tr>
+</table>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Max. loading Capacity&ensp;</td>
+<td> </td>
+<td>1200KG</td>
+</tr>
+</table>
+</center>
+</B>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mproductsec">
+<marquee behavior="alternate" onMouseOver="this.stop()" onMouseOut="this.start()">
+
+<div class="mproduct" id="1" onclick="cauroselchng(1);">
+<center><img src="./index_files/twowheelc.png" width="200px" height="175px" /></center>
+<B><font size="6rem"><center>&ensp;&ensp;2 Wheeler &ensp;&ensp;</center></font>
+<center>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Length&ensp;&ensp;</td>
+<td>Width&ensp;&ensp;</td>
+<td>Height&ensp;&ensp;</td>
+</tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<tr>
+<td>40 CM</td>
+<td>40 CM</td>
+<td>40 CM</td>
+</tr>
+</table>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Max. loading Capacity&ensp;</td>
+<td> </td>
+<td>20KG</td>
+</tr>
+</table>
+</center>
+</div>
+
+<div class="mproduct" id="2" onclick="cauroselchng(2);">
+<center><img src="./index_files/champtruckc.png" width="200px" height="175px" /></center>
+<B><font size="6rem"><center>3 Wheeler Champion</center></font>
+<center>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Length&ensp;&ensp;</td>
+<td>Width&ensp;&ensp;</td>
+<td>Height&ensp;&ensp;</td>
+</tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<tr>
+<td>6 FT</td>
+<td>4.8 FT</td>
+<td>4.8 FT</td>
+</tr>
+</table>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Max. loading Capacity&ensp;</td>
+<td> </td>
+<td>500KG</td>
+</tr>
+</table>
+</center>
+</div>
+
+<div class="mproduct" id="3" onclick="cauroselchng(3);">
+<center><img src="./index_files/tatacec.png" width="200px" height="175px" /></center>
+<B><font size="6rem"><center>&ensp;&ensp;&ensp;&ensp;&ensp;Tata Ace&ensp;&ensp;&ensp;&ensp;&ensp;</center></font>
+<center>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Length&ensp;&ensp;</td>
+<td>Width&ensp;&ensp;</td>
+<td>Height&ensp;&ensp;</td>
+</tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<tr>
+<td>7 FT</td>
+<td>4.8 FT</td>
+<td>4.8 FT</td>
+</tr>
+</table>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Max. loading Capacity&ensp;</td>
+<td> </td>
+<td>850KG</td>
+</tr>
+</table>
+</center>
+</div>
+
+<div class="mproduct" id="4" onclick="cauroselchng(4);">
+<center><img src="./index_files/pickoc.png" width="200px" height="175px" /></center>
+<B><font size="6rem"><center>&ensp;&ensp;&ensp;&ensp;&ensp;8 Ft. Pickup&ensp;&ensp;&ensp;&ensp;&ensp;</center></font>
+<center>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Length&ensp;&ensp;</td>
+<td>Width&ensp;&ensp;</td>
+<td>Height&ensp;&ensp;</td>
+</tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<tr>
+<td>8 FT</td>
+<td>4.8 FT</td>
+<td>5 FT</td>
+</tr>
+</table>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Max. loading Capacity&ensp;</td>
+<td> </td>
+<td>1200KG</td>
+</tr>
+</table>
+</center>
+</div>
+
+<div class="mproduct">
+<center><img src="./index_files/twowheelc.png" width="200px" height="175px" /></center>
+<B><font size="6rem"><center>2 Wheeler</center></font>
+<center>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Length&ensp;&ensp;</td>
+<td>Width&ensp;&ensp;</td>
+<td>Height&ensp;&ensp;</td>
+</tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<tr>
+<td>40 CM</td>
+<td>40 CM</td>
+<td>40 CM</td>
+</tr>
+</table>
+<table>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td>Max. loading Capacity&ensp;</td>
+<td> </td>
+<td>20KG</td>
+</tr>
+</table>
+</center>
+</div>
+
+</marquee>
+</div>
+
+<div class="productcards">
+  <div class="cardpkt glower" id="1" style="width:87px;height:82px;border-radius:5px;"><img src="./index_files/twowheelc.png" width="100%" height="100%" /></div>
+  <div class="cardpkt glower" id="2" style="background-color:#ccf3f8;width:87px;height:82px;margin-left:1.659%;border-radius:5px;"><img src="./index_files/champtruckc.png" width="100%" height="100%" /></div>
+</div>
+<div class="productcards" style="float:right;margin-top:-11.29%;margin-right:13.09%;">
+  <div class="cardpkt glower" id="3" style="width:89px;height:82px;margin-right:1.659%;border-radius:5px;"><img src="./index_files/tatacec.png" width="100%" height="100%" /></div>
+  <div class="cardpkt glower" id="4" style="width:87px;height:82px;margin-right:1.659%;border-radius:5px;"><img src="./index_files/pickoc.png" width="100%" height="100%" /></div>
+</div>
+
+<a id="pricing"></a>
+<div class="selectvcledock">
+<div class="dialog-1"></div>
+<div class="left-point"></div>
+<div class="color" id="1" style="display:none;">
+<div id="rectanglebox">
+<div class="vcleinfoimg">
+<img src="./index_files/twowheel.png" height="100%" width="100%" />
+</div>
+<div class="vcleinfotxt">
+<H1><font face="Verdana" size="6px" color="black">2 Wheeler</font></h1>
+<font face="Nexa">
+Max. Loading Capacity&ensp;&ensp; 20KG<br>
+<br>Dimension Available For Storage<br>
+40 CM length, 40 CM width, 40 CM height
+<br /><br />
+<button>Base Fare &ensp;&ensp;40</button>
+</font>
+</div>
+</div>
+<p class="vcleinfoterm" style="">
+Base fare is minimum charge for the particular vehicle for<br> certain period of time
+<button class="knowmore" style="float:right;margin-right:5%;width:20%;">Know More</button>
+</p>
+</div>
+
+<div class="color" id="2" style="display:block;">
+<div id="rectanglebox">
+<div class="vcleinfoimg">
+<img src="./index_files/champtruck.png" height="100%" width="100%" />
+</div>
+<div class="vcleinfotxt">
+<H1><font face="Verdana" size="6px" color="black">3 Wheeler</font></h1>
+<font face="Nexa">
+Max. Loading Capacity&ensp;&ensp; 500KG<br>
+<br>Dimension Available For Storage<br>
+6 FT. length, 4.8 FT. width, 4.8 FT. height
+<br /><br />
+<button>Base Fare &ensp;&ensp;250</button>
+</font>
+</div>
+</div>
+<p class="vcleinfoterm" style="">
+Base fare is minimum charge for the particular vehicle for<br> certain period of time
+<button class="knowmore" style="float:right;margin-right:5%;width:20%;">Know More</button>
+</p>
+</div>
+
+<div class="color" id="3" style="display:none;">
+<div id="rectanglebox">
+<div class="vcleinfoimg">
+<img src="./index_files/tatace.png" height="95.989%" width="110%" />
+</div>
+<div class="vcleinfotxt">
+<H1><font face="Verdana" size="6px" color="black">Tata Ace</font></h1>
+<font face="Nexa">
+Max. Loading Capacity&ensp;&ensp; 850KG<br>
+<br>Dimension Available For Storage<br>
+7 FT. length, 4.8 FT. width, 4.8 FT. height
+<br /><br />
+<button>Base Fare &ensp;&ensp;250</button>
+</font>
+</div>
+</div>
+<p class="vcleinfoterm" style="">
+Base fare is minimum charge for the particular vehicle for<br> certain period of time
+<button class="knowmore" style="float:right;margin-right:5%;width:20%;">Know More</button>
+</p>
+</div>
+
+<div class="color" id="4" style="display:none;">
+<div id="rectanglebox">
+<div class="vcleinfoimg">
+<img src="./index_files/picko.png" height="89.599%" width="108%" />
+</div>
+<div class="vcleinfotxt">
+<H1><font face="Verdana" size="6px" color="black">8 Feet Pickup</font></h1>
+<font face="Nexa">
+Max. Loading Capacity&ensp;&ensp; 1200KG<br>
+<br>Dimension Available For Storage<br>
+8 FT. length, 4.8 FT. width, 5 FT. height
+<br /><br />
+<button>Base Fare &ensp;&ensp;325</button>
+</font>
+</div>
+</div>
+<p class="vcleinfoterm" style="">
+Base fare is minimum charge for the particular vehicle for<br> certain period of time
+<button class="knowmore" style="float:right;margin-right:5%;width:20%;">Know More</button>
+</p>
+</div>
+<a id="products-end"></a>
+</div>
+
+<div class="mselectvcledock">
+<div class="dialog-1"></div>
+<div class="left-point"></div>
+<div class="color" id="1" style="display:none;">
+<div id="rectanglebox">
+<div class="vcleinfoimg">
+<img src="./index_files/twowheel.png" height="100%" width="100%" />
+</div>
+<div class="vcleinfotxt">
+<H1><font face="Verdana" size="6px" color="black">2 Wheeler</font></h1>
+<font face="Nexa">
+Max. Loading Capacity&ensp;&ensp; 20KG<br>
+<br>Dimension Available For Storage<br>
+40 CM length, 40 CM width, 40 CM height
+<br /><br />
+<button>Base Fare &ensp;&ensp;40</button>
+</font>
+</div>
+</div>
+<p class="vcleinfoterm" style="">
+Base fare is minimum charge for the particular vehicle for<br> certain period of time
+<button class="knowmore" style="float:right;margin-right:5%;width:20%;">Know More</button>
+<br><br><br />
+</p>
+</div>
+
+<div class="color" id="2" style="display:block;">
+<div id="rectanglebox">
+<div class="vcleinfoimg">
+<img src="./index_files/champtruck.png" height="100%" width="100%" />
+</div>
+<div class="vcleinfotxt">
+<H1><font face="Verdana" size="6px" color="black">3 Wheeler Champion</font></h1>
+<font face="Nexa">
+Max. Loading Capacity&ensp;&ensp; 500KG<br>
+<br>Dimension Available For Storage<br>
+6 FT. length, 4.8 FT. width, 4.8 FT. height
+<br /><br />
+<button>Base Fare &ensp;&ensp;250</button>
+</font>
+</div>
+</div>
+<p class="vcleinfoterm" style="">
+Base fare is minimum charge for the particular vehicle for<br> certain period of time
+<button class="knowmore" style="float:right;margin-right:5%;width:20%;">Know More</button>
+<br><br><br />
+</p>
+</div>
+
+<div class="color" id="3" style="display:none;">
+<div id="rectanglebox">
+<div class="vcleinfoimg">
+<img src="./index_files/tatace.png" height="90.989%" width="100%" />
+</div>
+<div class="vcleinfotxt">
+<H1><font face="Verdana" size="6px" color="black">Tata Ace</font></h1>
+<font face="Nexa">
+Max. Loading Capacity&ensp;&ensp; 850KG<br>
+<br>Dimension Available For Storage<br>
+7 FT. length, 4.8 FT. width, 4.8 FT. height
+<br /><br />
+<button>Base Fare &ensp;&ensp;250</button>
+</font>
+</div>
+</div>
+<p class="vcleinfoterm" style="">
+Base fare is minimum charge for the particular vehicle for<br> certain period of time
+<button class="knowmore" style="float:right;margin-right:5%;width:20%;">Know More</button>
+<br><br><br />
+</p>
+</div>
+
+<div class="color" id="4" style="display:none;">
+<div id="rectanglebox">
+<div class="vcleinfoimg">
+<img src="./index_files/picko.png" height="89.599%" width="108%" />
+</div>
+<div class="vcleinfotxt">
+<H1><font face="Verdana" size="6px" color="black">8 Feet Pickup</font></h1>
+<font face="Nexa">
+Max. Loading Capacity&ensp;&ensp; 1200KG<br>
+<br>Dimension Available For Storage<br>
+8 FT. length, 4.8 FT. width, 5 FT. height
+<br /><br />
+<button>Base Fare &ensp;&ensp;325</button>
+</font>
+</div>
+</div>
+<p class="vcleinfoterm" style="">
+Base fare is minimum charge for the particular vehicle for<br> certain period of time
+<button class="knowmore" style="float:right;margin-right:5%;width:20%;">Know More</button>
+<br><br><br />
+</p>
+</div>
+</div>
+
+<!-- Select Vehicle END -->
+
+
+<br /><br />
+<br /><br />
+
+
+<!-- Services Selection -->
+<div class="ourservices">
+<br /><br /><br>
+
+<!-- Select Service Type -->
+<div style="display:flex;flex-type:row;">
+<div width="10%" class="oneservice npactive" id="oneservice1" onclick="changeservice('1');"><span class="altinfo" id="altinfo1" style="position:absolute;left:4.5%;top:35.04%;font-weight:500;font-family:Nexa;font-size:18px;">MoveEasy</span><img src="./index_files/truck.png" class="oneserviceimg" /></div>
+<div width="10%" class="oneservice" id="oneservice2" onclick="changeservice('2');"><span class="altinfo" id="altinfo2" style="position:absolute;left:14%;top:35.04%;font-weight:500;font-family:Nexa;font-size:18px;">MoveMulti</span><img src="./index_files/truck.png" class="oneserviceimg" /></div>
+<div width="10%" class="oneservice" id="oneservice3" onclick="changeservice('3');"><span class="altinfo" id="altinfo3" style="position:absolute;left:23.6%;top:35.04%;font-weight:500;font-family:Nexa;font-size:18px;">MoveHire</span><img src="./index_files/truck.png" class="oneserviceimg" /></div>
+<div width="10%" class="oneservice" id="oneservice4" onclick="changeservice('4');"><span class="altinfo" id="altinfo4" style="position:absolute;left:33.4%;top:35.04%;font-weight:500;font-family:Nexa;font-size:18px;">MoveSuper</span><img src="./index_files/supertruck.png" class="oneserviceimg" /></div>
+</div>
+<br><br><br />
+<!-- Select Service Type END -->
+
+<!-- Controller Boxes -->
+<div class="service" id="1" style="display:block;width:40.5%;background:#ccf3f8;border-radius:12px;font-size:21px;font-family:Nexa;margin-top:4.9%;">
+<div class="dialog1"></div><br>
+<div style="padding:15px 25px 15px 26px;"><center><img src="./index_files/moveasy.png" width="100px" height="100px" /></center>
+<p align="justify">MoveEasy service allows users to deliver goods in a single drop location with single pickup location which possibly makes fast and instant delivery.</p>
+</div>
+</div>
+
+<div class="service" id="2" style="display:none;width:40.5%;background:#ccf3f8;border-radius:12px;font-size:18px;font-family:Nexa;margin-top:4.9%;">
+<div class="dialog2"></div><br>
+<div style="padding:15px 25px 15px 26px;"><center><img src="./index_files/movemulti.png" width="100px" height="100px" /></center>
+<p align="justify">Multiple drop service allows users to deliver goods on multiple locations with single pick-up location<BR><BR> Multiple pickup service allows users to choose multiple pickup location for goods with single drop location 
+</p>
+</div>
+</div>
+
+<div class="service" id="3" style="display:none;width:40.5%;background:#ccf3f8;border-radius:12px;font-size:20px;font-family:Nexa;margin-top:4.9%;">
+<div class="dialog3"></div><br>
+<div style="padding:15px 25px 15px 26px;"><center><img src="./index_files/movehire.png" width="100px" height="100px" /></center>
+<p align="justify">
+MoveHire service allows users to rent available vehicle for speci<font face="calibiri">fi</font>c time period, enables users to work according to their time and desire, the charges will be according to duration of time in addition to per kilometer charge
+</p>
+</div>
+</div>
+
+<div class="service" id="4" style="display:none;width:40.5%;background:#ccf3f8;border-radius:12px;font-size:21px;font-family:Nexa;margin-top:4.9%;">
+<div class="dialog4"></div><br>
+<div style="padding:15px 25px 15px 26px;"><center><img src="./index_files/movesuper.png" width="100px" height="100px" /></center>
+<p align="justify">
+MoveSuper allows users to book a vehicle with a close container which gives users the surety to deliver their goods with safety and security
+</p>
+</div>
+</div>
+<!-- Controller Boxes END -->
+
+</div>
+<!-- Services Selection END-->
+
+<!-- Mobile Services Selection -->
+<div class="mourservices">
+<br /><br /><br>
+
+<iframe style="border-style:none;" src="mourservices.html" width="100%" height="540px"></iframe>
+
+</div>
+<!-- Mobile Services Selection END-->
+
+
+<!-- Reviews Section Start -->
+<!--
+<div style="position:relative;display:box;width:100%;clear:both;">
+
+<div style="width:100%;height:auto;padding:10px 35px 10px 27px;">
+<div class="review-container" id="review-container">
+
+<div class="review-child">
+<blocckquote>
+<p>
+<B><font face="Verdana" size="5px">Abhishek says</font></B>
+<br>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br />
+Very good site
+</p>
+</blocckquote>
+</div>
+
+<div class="review-child">
+<blocckquote>
+<p>
+<B><font face="Verdana" size="5px">Prateek says</font></B>
+<br>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br />
+Best site ever I've seen. Great!!!
+</p>
+</blocckquote>
+</div>
+
+<div class="review-child">
+<blocckquote>
+<p>
+<B><font face="Verdana" size="5px">Deepak says</font></B>
+<br>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br />
+Awesome website
+</p>
+</blocckquote>
+</div>
+
+<div class="review-child">
+<blocckquote>
+<p>
+<B><font face="Verdana" size="5px">Deepak says</font></B>
+<br>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br />
+Awesome website
+</p>
+</blocckquote>
+</div>
+
+<div class="review-child">
+<blocckquote>
+<p>
+<B><font face="Verdana" size="5px">Deepak says</font></B>
+<br>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br />
+Awesome website
+</p>
+</blocckquote>
+</div>
+
+</div>
+<button id="rprev" type="button" onclick="">&#10094;</button><button id="rnext" type="button" onclick="">&#10095;</button>
+</div>
+
+</div>
+-->
+<!-- Reviews Section END -->
+
+
+<a id="register-section"></a>
+<!-- Registration Sections START -->
+<div class="regsection">
+<br /><br />
+<H1 align="center"><font face="Lucida"><I>Become a partner of MoveTez</I></font></h1><br /><br /><br />
+<div id="main-flex">
+<div id="child-flexi1" onclick="location.href='./register/vendor.html'" onmouseover="bgchnger(1);" onmouseout="bgchnger(4);" style="border-right:1px solid white;background-color:black;color:#4297bf;"><div class="zoomflexi1"><img style="margin-left:19%;" src="./common/gear.png" width="98px" height="94px" align="middle"><br><br><center><span style="width:auto;font-family:Nexa;font-size:2em;margin-left:-38%;">Register as a</span><br><span style="margin-left:-38%;width:auto;font-family:Nexa;font-size:2em;"> Vendor</span></FONT></center></div></div>
+
+<div id="child-flexi3" onclick="location.href='./register/driver.html'" onmouseover="bgchnger(3);" onmouseout="bgchnger(6);" style="background-color:black;color:#4297bf"><div class="zoomflexi3"><img style="margin-left:19%;" src="./common/gear.png" width="98px" height="94px" align="middle"><br><br><center><span style="margin-left:-38%;width:auto;font-family:Nexa;font-size:2em;">Register as a</span><br><span style="margin-left:-38%;width:50%;font-family:Arial;font-size:1.5em;"> &ensp;<B>Delivery Partner</b></span></FONT></center></div></div>
+</div>
+</div>
+
+<div class="mregsection">
+<H1 align="center"><font face="Lucida"><I>Become a partner of MoveTez</I></font></h1>
+<div class="containner"> 
+<div class="slider">
+
+<div class="box1 box" style="cursor:pointer;" onclick="window.location.href='./register/vendor.html'">
+<img src="./common/business.png" width="100%" height="100%" />
+</div>
+                                
+<div class="box2 box" style="cursor:pointer;" onclick="window.location.href='./register/driver.html'">
+<img src="./common/delivery-partner.png" width="100%" height="100%" />
+</div>
+
+<div class="box3 box" style="cursor:pointer;" onclick="window.location.href='./register/vendor.html'">
+<img src="./common/business.png" width="100%" height="100%" />
+</div>
+
+<div class="box4 box" style="cursor:pointer;" onclick="window.location.href='./register/driver.html'">
+<img src="./common/delivery-partner.png" width="100%" height="100%" />
+</div>
+
+<div class="box5 box" style="cursor:pointer;" onclick="window.location.href='./register/vendor.html'">
+<img src="./common/business.png" width="100%" height="100%" />
+</div>
+
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff"/></svg>
+<div class="trail" style="display:none;">
+<div class="box1 active">1</div>
+<div class="box2">2</div>
+<div class="box3">3</div>
+<div class="box4">4</div>
+<div class="box5">5</div>
+</div>
+
+</div>   
+</div>
+<!-- Registration Sections END -->
+
+
+<br><br>
+<br><br>
+<br><br>
+
+
+</div>
+<!-- CONTENT END -->
+
+
+<div class="xtraspace xxtraspace"><br><br>
+<br><br>
+<br><br>
+<br><br></div>
+
+
+<!-- THE FOOTER -->
+<div id="footer0" class="container-fluid" style="color:silver;">
+<br>
+<div style="position:relative;width:26.01%;margin-left:2%;float:left;padding:10px;font-family:Nexa;">
+<div style="border-right:1px groove #70a9b6;">
+<div title="MoveTez" style="float:left;width:80.897%;height:auto;"><a href="index.html"><img src="./common/logod.png" align="top" width="100%" /></a></div>
+<div style="position:relative;font-size:18px;clear:both;margin-left:4%;"><br />Safe Chalega, Tez Bhadega</div>
+<div style="position:relative;clear:both;float:left;left:22.01%;"><br />
+<div style="display:flex;flex-direction:row;">
+<div style="background-color:#1ed4ed;width:25px;height:25px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+</div>
+</div>
+<div style="position:relative;font-size:13px;clear:both;color:white;margin-left:3.5%;"><br /><br /><br />
+<br />
+</div>
+</div>
+</div>
+<div style="position:relative;width:63%;float:left;margin-left:5.65%;padding:0px;font-family:Nexa;">
+<div style="position:relative;float:left;width:17.945%;">
+<h3>Company</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="about.html">About Us</a><br>
+<a style="text-decoration:none;" href="#pricing">Pricing</a><br>
+<a style="text-decoration:none;" href="">O<font face="arial" size="3em">ff</font>ers</a><br></div>
+</div>
+<div style="position:relative;left:2%;float:left;width:25%;">
+<h3>Service</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="./register/vendor.html">Vendors<br>
+<a style="text-decoration:none;" href="./register/driver.html">Drivers<br>
+<a style="text-decoration:none;" href="movnpack.html">Movers & Packers</a><br></div>
+</div>
+<div style="position:relative;margin-left:2%;float:left;width:15%;">
+<h3>Resources</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="blog.html">Blog</a><br><br>
+<img src="./common/briefcase.png" width="33px" height="30px" align="top" />&ensp;<a style="text-decoration:none;" href="hiring.html">Hiring</a><br></div>
+</div>
+<div style="position:relative;margin-right:8.439%;margin-top:-3.9567%;float:right;width:24.28%;">
+<span title="Download for Android" style="width:100%;height:auto;"><a href=""><img src="./common/appicoo.png" align="top" width="100%" /></a></span>
+</div>
+</div>
+<div style="position:relative;left:10%;width:40%;float:left;">
+<br><br><br><br>
+</div>
+<div style="position:relative;display:block;clear:both;width:100%;background:#2b2e33;height:auto;">
+<span style="position:relative;font-size:16px;float:left;color:white;margin-left:3.5%;">
+<a href="./privacy.html" style="text-decoration:none;"><font color="white">Privacy Policy</font></a>&ensp;&ensp;<a href="./tos.html" style="text-decoration:none;"><font color="white">Terms of Service</font></a>
+</span>
+<center><font size="3px">Copyright &copy; 2021-22 All Rights Reserved.</font><center>
+<span style="position:relative;font-size:16px;float:right;margin-top:-1.5%;margin-right:3%;color:white;">
+<a href="./sitemap.php" style="text-decoration:none;"><font color="white">Sitemap</font></a>
+</span>
+<br />
+</div>
+</div>
+
+<div id="footer1" class="container-fluid" style="color:silver;">
+<br />
+<div style="position:relative;display:block;clear:both;width:100%;font-family:Nexa;">
+<div title="MoveTez" style="float:left;margin:0 0 0 5%;width:48%;height:auto;"><a href="index.html"><img src="./common/logod.png" align="top" width="100%" /></a></div>
+<div style="float:right;margin-right:8.9%;margin-top:-5%;width:30%;"><br />
+<a href=""><img src="./common/appicoo.png" align="top" width="100%" /></a>
+</div><br><br>
+<div style="position:relative;font-size:14px;margin-left:9.29%;"><br />Safe Chalega, Tez Bhadega</div><br />
+<div style="position:relative;display:block;width:100%;">
+<div style="display:flex;flex-direction:row;margin-left:17%;width:25%;">
+<div style="background-color:#1ed4ed;width:25px;height:25px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+</div>
+</div>
+</div>
+<br /><br>
+<div style="position:relative;display:block;clear:both;width:100%;font-family:Nexa;">
+<div style="position:relative;float:left;width:45%;margin-left:8%;">Company<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="about.html">About Us</a><br>
+<a href="index.html#pricing">Pricing</a><br>
+<a href="">Of<font face="cambria">f</font>ers</a></div>
+</div>
+<div style="position:relative;float:right;width:35.5956%;margin-right:3%;">Resources<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="">Blog</a><br>
+<br>
+<a href=""><img src="./common/briefcase.png" width="30px" height="25px" align="top" /> Hiring</a></div>
+</div>
+</div>
+<div style="position:relative;display:block;top:2.4vh;height:auto;clear:both;width:100%;font-family:Nexa;"><br>
+<div style="position:relative;float:left;width:45%;margin-left:8%;">Service<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="./register/vendor.html">Vendors</a><br>
+<a href="./register/driver.html">Drivers</a><br>
+<a href="">Movers &amp; Packers</a></div>
+</div>
+<br><br><br />
+</div>
+<br /><br /><br /><br />
+<div style="position:relative;display:block;clear:both;top:3vh;width:100%;font-family:Nexa;">
+<span style="margin-left:4%;position:relative;font-size:14px;">Privacy Policy</span>
+<span style="margin-left:6%;position:relative;font-size:14px;">Terms Of Service</span>
+<span style="margin-left:7.98%;position:relative;font-size:14px;">Sitemap</span>
+<br /><center>Copyright &copy; 2021-22 All Rights Reserved.</center>
+</div>
+<br /><br />
+</div>
+<!-- THE FOOTER END -->
+
+
+<!-- SCROLLING BAR START -->
+<div id="scrollingbar">
+<svg style="top:-15%;" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+<line x1="-15" y1="-40" x2="-15" y2="230" style="stroke:rgb(255,0,0);stroke-width:2" stroke="green" stroke-width="2" visibility="hidden" fill="none" id="theMotionPath" />
+<line x1="2" y1="0" x2="2" y1="1650" y2="1550" style="stroke:rgb(0,0,0);stroke-width:1;" stroke="white" fill="none" />
+<line x1="10" y1="0" x2="10" y1="1650" y2="1550" style="stroke:rgb(0,0,0);stroke-width:1;" stroke="white" stroke-dasharray="8" fill="none" />
+<line x1="20" y1="0" x2="20" y1="1650" y2="1550" style="stroke:rgb(0,0,0);stroke-width:1;" stroke="white" fill="none" />
+<image width="50px" height="100" xlink:href="./index_files/trucker.png" id="dot" />
+</svg>
+<div class="verylong"></div>
+</div>
+<!-- SCROLLING BAR END -->
+
+
+</div>
+<!-- END OF PAGE-CONTAINER -->
+
+
+<script>
+function cauroselchng(data) {
+  $(".color").css("display", "none");
+  $('.color[id='+data+']').css("display", "block");
+  $('.cardpkt').css("background-color", "#1ed4ed");
+  $('.cardpkt[id='+data+']').css("background-color", "#ccf3f8");
+  $('.mproduct').css("background-color", "#25cede");
+  $('.mproduct[id='+data+']').css("background-color", "#1ef4ef");
+  var win = window.matchMedia("(max-width: 820px)");
+  if (win.matches) {
+    window.location.href = "#pricing";
+  }
+}
+</script>
+
+<script>
+function changeservice(dat) {
+  $(".service").css("display", "none");
+  $('.service[id='+dat+']').css("display", "block");
+  var addclass = 'npactive';
+  temp = "#oneservice" +dat;
+  $(".oneservice").removeClass(addclass);
+  $(temp).addClass(addclass);
+}
+</script>
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+<script src="./common/slider.js"></script>
+<script type="text/javascript" src="./index_files/indexscript.js"></script>
+<script type="text/javascript" src="./common/mscript.js"></script>
+<script>
+const buttonRight = document.getElementById('rnext');
+const buttonLeft = document.getElementById('rprev');
+
+buttonRight.onclick = function () {
+document.getElementById('review-container').scrollLeft += 20;
+};
+buttonLeft.onclick = function () {
+document.getElementById('review-container').scrollLeft -= 20;
+};
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+const ele = document.getElementById('review-container');
+ele.style.cursor = 'grab';
+
+let pos = { top: 0, left: 0, x: 0, y: 0 };
+
+const mouseDownHandler = function (e) {
+ele.style.cursor = 'grabbing';
+ele.style.userSelect = 'none';
+pos = {
+  left: ele.scrollLeft,
+  top: ele.scrollTop,
+  x: e.clientX,
+  y: e.clientY,
+ };
+document.addEventListener('mousemove', mouseMoveHandler);
+document.addEventListener('mouseup', mouseUpHandler);
+};
+
+const mouseMoveHandler = function (e) {
+
+const dx = e.clientX - pos.x;
+const dy = e.clientY - pos.y;
+
+ele.scrollTop = pos.top - dy;
+ele.scrollLeft = pos.left - dx;
+};
+
+const mouseUpHandler = function () {
+ele.style.cursor = 'grab';
+ele.style.removeProperty('user-select');
+document.removeEventListener('mousemove', mouseMoveHandler);
+document.removeEventListener('mouseup', mouseUpHandler);
+};
+
+ele.addEventListener('mousedown', mouseDownHandler);
+});
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script> 
+<script>
+$num = $('.my-card').length;
+$even = $num / 2;
+$odd = ($num + 1) / 2;
+
+if ($num % 2 == 0) {
+  $('.my-card:nth-child(' + $even + ')').addClass('active');
+  $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+  $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+} else {
+  $('.my-card:nth-child(' + $odd + ')').addClass('active');
+  $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+  $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+}
+
+$('.my-card').click(function() {
+  $slide = $('.active').width();
+  console.log($('.active').position().left);
+  
+  if ($(this).hasClass('next')) {
+    $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
+  } else if ($(this).hasClass('prev')) {
+    $('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
+  }
+  
+  $(this).removeClass('prev next');
+  $(this).siblings().removeClass('prev active next');
+  
+  $(this).addClass('active');
+  $(this).prev().addClass('prev');
+  $(this).next().addClass('next');
+});
+</script>
+
+<script type="text/javascript">
+function positionTheDot() {
+
+// What percentage down the page are we? 
+var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop - 1250) / (document.documentElement.scrollHeight - document.documentElement.clientHeight - 3900);
+
+// Get path length
+var path = document.getElementById("theMotionPath");
+var pathLen = path.getTotalLength();
+  
+// Get the position of a point at <scrollPercentage> along the path.
+var pt = path.getPointAtLength(scrollPercentage * pathLen);
+  
+// Position the red dot at this point
+var dot = document.getElementById("dot");
+dot.setAttribute("transform", "translate("+ pt.x + "," + pt.y + ")");
+  
+};
+
+// Update dot position when we get a scroll event.
+window.addEventListener("scroll", positionTheDot);
+
+// Set the initial position of the dot.
+positionTheDot();
+</script>
+
+<script>
+function bgchnger(x)
+{
+  if(x == 1)
+  {
+    document.getElementById("child-flexi1").style.background = "#666666";
+  }
+  else if(x == 2)
+  {
+    document.getElementById("child-flexi2").style.background = "#7ab6d1";
+  }
+  else if(x == 3)
+  {
+    document.getElementById("child-flexi3").style.background = "#666666";
+  }
+  else if(x == 4)
+  {
+    document.getElementById("child-flexi1").style.background = "#000000";
+  }
+  else if(x == 5)
+  {
+    document.getElementById("child-flexi2").style.background = "#4297bf";
+  }
+  else if(x == 6)
+  {
+    document.getElementById("child-flexi3").style.background = "#000000";
+  }
+}
+</script>
+
+<script>
+$(function() {
+  var $elements = $('.animateBlock.notAnimated'); //contains elements of nonAnimated class
+  var $window = $(window);
+  $window.on('scroll', function(e) {
+    $elements.each(function(i, elem) { //loop through each element
+      if ($(this).hasClass('animated')) // check if already animated
+        return;
+      animateMe($(this));
+    });
+  });
+});
+ 
+function animateMe(elem) {
+  var winTop = $(window).scrollTop(); // calculate distance from top of window
+  var winBottom = winTop + $(window).height();
+  var elemTop = $(elem).offset().top; // element distance from top of page
+  var elemBottom = elemTop + $(elem).height();
+  if ((elemBottom <= winBottom) && (elemTop >= winTop)) {
+    // exchange classes if element visible
+    $(elem).removeClass('notAnimated').addClass('animated');
+  }
+}
+</script>
+
+<script>
+$(document).scroll(function () {
+       var hT = $('.glower').offset().top,
+           hH = $('.glower').outerHeight(),
+           wH = $(window).height(),
+           wS = $(this).scrollTop();
+       if (wS > (hT+hH-wH+1850)) {
+        $('.glower').css("display","block");
+       }
+});
+</script>
+
+</body>
+</html>
