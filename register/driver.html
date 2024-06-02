@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META charset="UTF-8">
+<META name="viewport" content= "width=device-width, user-scalable=no" initial-scale="1">
+<TITLE>Welcome To MoveTez</title>
+<link rel="stylesheet" type="text/css" href="../common/styles.css">
+<link rel="stylesheet" type="text/css" href="../common/anim.css">
+<link rel="stylesheet" type="text/css" href="../common/body.css">
+<link rel="stylesheet" type="text/css" href="./common/rgsterreason.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+/* Media Queries for Smartphones */
+@media only screen and (max-width: 768px) {
+.xtraspace
+{
+  display:none;
+}
+
+#page-container
+{
+  min-height:0;
+}
+
+#mhalfimage img {
+  width: 140.95426%;
+  height: 28rem;
+  margin-left:-5%;
+  margin-top:5%;
+}
+
+.form-container
+{
+  display:none;
+}
+
+#mstatistics {
+  display: flex;
+  flex-direction: reverse;
+}
+
+#mstatistics div {
+  width: 42.5%;
+  height:auto;
+  margin-left:5%;
+  font-size:12px;
+}
+
+#mstatistics div img {
+  width: 75%;
+  height: 75%;
+  height:auto;
+  margin-left:5%;
+}
+
+#statistics
+{
+  display:none;
+}
+
+.rgster_reason
+{
+  display:none;
+}
+
+#holderportd
+{
+  display:none;
+}
+}
+
+/* Media Queries for Tablet/Phablet/iPads in Landscape Mode */
+@media only screen and (min-width : 769px) and (max-width : 1024px) and (orientation : landscape) { }
+
+/* Media Queries for High-Pixel-Smaller-Screen QHD/4K displays like Larger Palmtop/Macbook/Convertible laptops */
+@media only screen and (min-width : 1025px) and (max-width : 1224px) {
+.notxtraspace
+{
+  display:none;
+}
+}
+
+/* Media Queries for Desktop/Laptops */
+@media only screen and (min-width : 1225px) { 
+#rgster-reason
+{
+  clear:both;
+  display:box;
+  width:100%;
+  height:100%;
+  clear:both;
+  top:0%;
+  left:0%;
+}
+
+.rgster_reason
+{
+  margin-left:-6%;
+  margin-top:-11%;
+  display:block;
+  position:relative;
+}
+
+#holderport
+{
+  float:right;
+  width:30%;
+  height:500px;
+  padding-top:5.1119%;
+  margin-right:10%;
+}
+
+#holderportd
+{
+  width:100%;
+  font-face:Nexa;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@-webkit-keyframes btn {
+  0%, 100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  70% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  80% {
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+  }
+  90% {
+    -moz-transform: scale(0.96);
+    -ms-transform: scale(0.96);
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+  }
+}
+@-moz-keyframes btn {
+  0%, 100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  70% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  80% {
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+  }
+  90% {
+    -moz-transform: scale(0.96);
+    -ms-transform: scale(0.96);
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+  }
+}
+@keyframes;
+@-webkit-keyframes fish {
+  0%, 70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fish {
+  0%, 70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes;
+html {
+  height: 100%;
+}
+
+.fish, .fish-shadow {
+  width: 640px;
+  height: auto;
+  position: absolute;
+  top: -145px;
+  left: -177px;
+  -moz-animation: fish 3s forwards ease-in-out;
+  -webkit-animation: fish 3s forwards ease-in-out;
+  animation: fish 3s forwards ease-in-out;
+}
+.fish path, .fish-shadow path {
+  fill: #fff;
+}
+.fish path:hover, .fish-shadow path:hover {
+  fill: #ff6100;
+}
+.fish .line, .fish-shadow .line {
+  fill: none;
+}
+
+.fish-shadow-con {
+  opacity: 0.2;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fish-shadow {
+  top: -125px;
+  left: -157px;
+}
+.fish-shadow path {
+  fill: #211922;
+}
+.fish-shadow path:hover {
+  fill: #211922;
+}
+
+.fish-shadow {
+  -webkit-filter: url("#goo");
+  filter: url(#goo);
+  top: -125px;
+  left: -157px;
+  opacity: 0.4;
+}
+
+.form-container {
+  position: relative;
+  background-color: #fafafe;
+  border-radius: 10px;
+  clear:both;
+  margin: 45px 0px 40px 20%;
+  padding: 25px 20px 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 348px;
+  box-sizing: border-box;
+}
+.form-container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 60%;
+  background-color: #fafafe;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+}
+
+.card_title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.card_title-info {
+  font-size: 14px;
+  margin: 7px 0 10px;
+}
+
+.card_button {
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 500;
+  margin: 25px 0 10px;
+  color: #fff;
+  background: linear-gradient(#ff6100, #ff5050);
+  box-shadow: 0 2px 12px -3px #ff5050;
+  -moz-animation: btn 6s 3s infinite ease-in-out;
+  -webkit-animation: btn 6s 3s infinite ease-in-out;
+  animation: btn 6s 3s infinite ease-in-out;
+  opacity: 0.9;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.card_button:hover {
+  opacity: 1;
+  box-shadow: 0 2px 2px -3px #ff5050;
+}
+
+.card_info {
+  font-size: 14px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 10px;
+}
+.input + .input {
+  margin-top: 10px;
+}
+
+.input_label {
+  color: #8597a3;
+  position: absolute;
+  top: 20px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.input_field {
+  border: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.input_field:focus, .input_field:valid {
+  outline: 0;
+  border-bottom-color: #665856;
+  border-right:1px black groove;
+}
+
+.input_field:focus + .input_label, .input_field:valid + .input_label {
+  color: #665856;
+  -moz-transform: translateY(-25px);
+  -ms-transform: translateY(-25px);
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px);
+}
+
+.input_field_reqnot {
+  border: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.input_field_reqnot:focus, .input_field_reqnot:valid {
+  outline: 0;
+}
+
+.input_field_reqnot:focus + .input_label, .input_field_reqnot:valid + .input_label {
+  color: #665856;
+  -moz-transform: translateY(-25px);
+  -ms-transform: translateY(-25px);
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px);
+}
+
+.link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+.rabbit {
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  color:#6c6c6c;
+}
+
+.cta:hover
+{
+  color:#395062;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: white;
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  top:0%;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background:white;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.96);
+}
+
+.notxtraspace
+{
+  display:none;
+}
+
+#statistics {
+  display: flex;
+  flex-direction: reverse;
+}
+
+#statistics div {
+  width: 25%;
+  height:auto;
+  margin-left:5%;
+}
+
+#mstatistics
+{
+  display:none;
+}
+}
+
+</style>
+<script>
+//Page on top during unload before reload
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}
+</script>
+<script>
+//Window Reload on Page Resize in desktops
+var windowsize = window.matchMedia("(min-width: 1225px)");
+function onresizer() {
+if(windowsize.matches)
+{
+  onresize();
+}
+}
+
+function onresize()
+{
+$(window).bind('resize', function(e)
+{
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(function()
+  {
+    this.location.reload(false); /* false to get page from cache */
+  }, 100);
+});
+}
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+}
+</script>
+</head>
+<BODY link="black" alink="black" vlink="black" onLoad="onresizer();">
+
+<!-- PAGE-CONTAINER START -->
+<div id="page-container">
+
+
+<!-- HALF PAGE START -->
+<!-- for desktop/laptop start -->
+<div id="halfpage">
+<!-- HEADER START -->
+<div class="header">
+<span alt="MoveTez" style="float:left;width:15%;height:97px;"><a href="../index.html"><img src="../common/logo.png" align="top" width="100%" /></a></span>
+<span id="hderlinks" style="float:left;padding:1% 0 0 15%;width:70%;">
+<B><a href="../about.html" style="font-family:Nexa;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">About </span>Us</a><a id="producthder" href="../index.html#products-start" style="font-family:Nexa;padding-left:10%;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">Produc</span>ts</a><a id="pricinghder" href="../index.html#pricing" style="font-family:Nexa;padding-left:10%;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">Prici</span>ng</a></B>
+<button id="callusbtn" role="button" onclick="location.href='../contact.html'" title="Contact Us">Contact</button><button id="rgisterbtn" onclick="location.href='../index.html#register-section'" role="button" title="Register">Register</button></span>
+<!-- HIDDEN STICKY NAVBAR START -->
+<div id="supernavi">
+<div id="navbar">
+<div id="naavbar" style="display:none;padding:10px;">
+<span style="float:left;margin-top:-1.188%;width:6%;height:52px;"><a href="../index.html"><img alt="MoveTez" src="../common/logobg.png" align="top" width="100%" /></a>&ensp;&ensp;</span>
+<B><a href="../about.html" style="text-decoration:none;" title="">&ensp;&ensp;<span class="navitxt">About </span>Us&ensp;&ensp;</a>
+<a id="productnaavbar" href="../index.html#products-start" style="text-decoration:none;" title=""><span class="navitxt">Product</span>s&ensp;&ensp;</a>
+<a id="pricingnaavbar" href="../index.html#pricing" style="text-decoration:none;" title=""><span class="navitxt">Pricin</span>g&ensp;&ensp;</a>
+<span style="float:right;margin-right:1%;">
+<button class="contactbutton" onclick="location.href='../contact.html'" type="button">Contact</button>
+&ensp;&ensp;
+&ensp;&ensp;
+&ensp;&ensp;
+&ensp;&ensp;
+<button class="registerbutton" onclick="location.href='../index.html#register-section'" type="button">Register</button>
+</span>
+</div>
+</div>
+</div>
+<!-- HIDDEN STICKY NAVBAR END -->
+<!-- HEADER CONTENT START -->
+<div style="position:relative;display:block;font-family:Nexa;float:right;padding-top:5.23%;padding-bottom:10%;margin-top:2%;padding-left:2%;width:46%;right:-5%;">
+
+<!-- FORM START -->
+<a id="topsection"></a>
+<div class="form-container">
+<div class="card">
+<h1 class="card_title">Register as a Mover</h1>
+<p class="card_title-info">Become a delivery partner in MoveTez within minutes</p>
+<div class="input">
+<input type="text" class="input_field" id="name" required />
+<label class="input_label">Full name<font color="red">&ensp; *</font></label>
+</div>
+
+<div class="input">
+<input type="text" class="input_field" id="number" required />
+<label class="input_label">Phone number<font color="red">&ensp; *</font></label>
+</div><br />
+
+<div class="input">
+<select class="input_field" name="cities" id="place" required>
+<option value="" selected>Select the city you wish to serve</option>
+<option value="jaipur">Jaipur</option>
+<option value="mumbai">Mumbai</option>
+<option value="delhi">Delhi</option>
+<option value="kolkata">Kolkata</option>
+<option value="chennai">Chennai</option>
+<option value="lucknow">Lucknow</option>
+<option value="gurugaon">Gurugaon</option>
+<option value="kota">Kota</option>
+<option value="jodhpur">Jodhpur</option>
+<option value="pune">Pune</option>
+<option value="bhopal">Bhopal</option>
+<option value="meerut">Meerut</option>
+</select>
+</div>
+
+<div class="input">
+<select class="input_field" name="vcles" id="vehicle" required>
+<option value="" selected>Select your vehicle</option>
+<option value="Tata ACE- 7 Feet Pickup">Tata Ace</option>
+<option value="8 Feet Pickup">8 Feet Pickup</option>
+<option value="Two Wheeler">Two Wheeler</option>
+<option value="Three Wheeler">Three Wheeler Champion</option>
+</select>
+</div>
+
+<button class="card_button" id="Dbtn">Get started</button>
+
+</div>
+<div class="fish-shadow-con">
+<svg class="fish-shadow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMin slice" viewBox="0 0 743 645">
+
+<g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+<path d="M177.367 337.568L182.709 357.739C198.517 417.421 249.748 460.995 311.193 467.019L421.508 477.834C478.237 483.396 532.831 454.649 560.346 404.729C607.09 319.923 557.549 214.182 462.47 195.822L375.079 178.946C368.369 177.651 361.766 175.854 355.324 173.572C251.651 136.837 149.205 231.245 177.367 337.568Z" class="line" id="Line" />
+
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-103.000000, 3.000000)" fill="#F2AFAF">
+<g id="l-1" transform="translate(118.396084, 37.985234) rotate(-89.000000) translate(-118.396084, -37.985234) translate(104.396084, 23.985234)">
+<path d="M14.1723611,27.5145257 C19.9713509,27.5145257 24.6723611,22.8135155 24.6723611,17.0145257 C24.6723611,15.8258883 28.1981217,2.09701504 27.8341336,1.03166708 C26.4223375,-3.10048431 18.7827136,6.51452565 14.1723611,6.51452565 C9.87015746,6.51452565 1.67467528,-2.67194974 0.0523652038,1.03166708 C-0.512055182,2.32019808 3.67236107,15.5177394 3.67236107,17.0145257 C3.67236107,22.8135155 8.3733712,27.5145257 14.1723611,27.5145257 Z" />
+</g>
+</g>
+<animateMotion dur="6s" begin="0s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-71.000000, 3.000000)">
+<g id="l-2" transform="translate(96.916890, 37.437926) rotate(-89.000000) translate(-96.916890, -37.437926) translate(60.416890, 13.437926)">
+<ellipse id="Oval" cx="36.5" cy="24" rx="16.5" ry="24" />
+<path d="M52.8409492,28.4193415 C56.9830848,28.4193415 67.8409492,23.8671728 67.8409492,17.7920406 C67.8409492,16.3338966 72.7364131,8.06546148 72.3851131,6.79204055 C71.2727759,2.75994931 63.4888957,6.79204055 60.3409492,6.79204055 C56.1988135,6.79204055 52.8409492,11.7169083 52.8409492,17.7920406 C52.8409492,23.8671728 48.6988135,28.4193415 52.8409492,28.4193415 Z" id="Oval" />
+<path d="M1.84094917,28.4193415 C5.98308479,28.4193415 16.8409492,23.8671728 16.8409492,17.7920406 C16.8409492,16.3338966 21.7364131,8.06546148 21.3851131,6.79204055 C20.2727759,2.75994931 12.4888957,6.79204055 9.34094917,6.79204055 C5.19881354,6.79204055 1.84094917,11.7169083 1.84094917,17.7920406 C1.84094917,23.8671728 -2.30118646,28.4193415 1.84094917,28.4193415 Z" id="Oval" transform="translate(10.701577, 16.709671) scale(-1, 1) translate(-10.701577, -16.709671) " />
+</g>
+</g>
+<animateMotion dur="6s" begin="0.1s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-58.000000, 3.000000)" fill="#D8D8D8">
+<g id="l-3-" transform="translate(83.924588, 36.883456) rotate(-89.000000) translate(-83.924588, -36.883456) translate(69.424588, 12.883456)">
+<path d="M14.1723611,48 C19.4148996,48 23.903645,41.8034457 25.7601702,33.016917 C26.3483828,30.2330353 28.8341336,32.1407168 28.8341336,28.9515567 C28.8341336,15.6967227 21.0759204,1.42108547e-14 14.1723611,1.42108547e-14 C7.2688017,1.42108547e-14 3.55271368e-15,13.745166 3.55271368e-15,27 C3.55271368e-15,29.9816317 1.95554677,29.8362716 2.47309478,32.4701788 C4.25630479,41.5452976 8.82173488,48 14.1723611,48 Z" id="l-3" />
+</g>
+</g>
+<animateMotion dur="6s" begin="0.2s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-48.000000, 3.000000)" fill="#D8D8D8">
+<g id="l-4-" transform="translate(73.917498, 37.202362) rotate(-89.000000) translate(-73.917498, -37.202362) translate(61.417498, 13.202362)">
+<path d="M12.2878333,48 C16.8332608,48 20.7251285,41.8034457 22.3347878,33.016917 C22.8447845,30.2330353 25,32.1407168 25,28.9515567 C25,15.6967227 18.2734123,1.42108547e-14 12.2878333,1.42108547e-14 C6.30225431,1.42108547e-14 0,13.745166 0,27 C0,29.9816317 1.69551372,29.8362716 2.14424232,32.4701788 C3.69033525,41.5452976 7.64869079,48 12.2878333,48 Z" id="l-4" />
+</g>
+</g>
+<animateMotion dur="6s" begin="0.3s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-32.000000, 3.000000)" fill="#D8D8D8">
+<g id="l-5-" transform="translate(58.922677, 36.774735) rotate(-89.000000) translate(-58.922677, -36.774735) translate(49.422677, 12.774735)">
+<path d="M9.33875331,48 C12.7932782,48 15.7510977,41.8034457 16.9744387,33.016917 C17.3620362,30.2330353 19,32.1407168 19,28.9515567 C19,15.6967227 13.8877933,1.42108547e-14 9.33875331,1.42108547e-14 C4.78971327,1.42108547e-14 0,13.745166 0,27 C0,29.9816317 1.28859043,29.8362716 1.62962417,32.4701788 C2.80465479,41.5452976 5.813005,48 9.33875331,48 Z" id="l-4" />
+</g>
+</g>
+<animateMotion dur="6s" begin="0.4s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-1.000000, -2.000000)" fill="#D8D8D8">
+<g id="l-6" transform="translate(23.080623, 42.228667) rotate(-89.000000) translate(-23.080623, -42.228667) translate(-17.919377, 20.728667)">
+<path d="M41.7607406,42.4419194 C43.7607286,42.4419194 43.2381119,38.329711 43.2310921,38.0763828 C43.1415394,34.8446384 44.2788431,34.4419194 41.6451883,34.4419194 C39.0115336,34.4419194 39.7260112,34.2957436 39.8222402,37.76842 C39.82926,38.0217482 39.7195178,42.4419194 41.7607406,42.4419194 Z" id="Oval" />
+<path d="M23.6342467,37.7478622 C27.3113017,37.7478622 36.9500408,30.5559331 36.9500408,20.9578882 C36.9500408,18.65418 41.2958401,5.59095627 40.9839843,3.57909038 C39.9965407,-2.7911731 32.569021,0.0196920288 29.4031545,6.69804407 C26.912494,11.9520586 23.6342467,11.3598432 23.6342467,20.9578882 C23.6342467,30.5559331 19.9571917,37.7478622 23.6342467,37.7478622 Z" id="Oval" transform="translate(31.500000, 18.873931) scale(-1, 1) translate(-31.500000, -18.873931) " />
+<path d="M43.2310921,38.0763828 C46.9081472,38.0763828 56.5468863,30.8844538 56.5468863,21.2864088 C56.5468863,18.9827007 60.8926856,5.91947694 60.5808297,3.90761104 C59.5933862,-2.46265244 52.1658664,0.348212694 49,7.02656473 C46.5093394,12.2805793 43.2310921,11.6883638 43.2310921,21.2864088 C43.2310921,30.8844538 39.5540371,38.0763828 43.2310921,38.0763828 Z" id="Oval" />
+<rect id="Rectangle" fill-opacity="0" x="0.186684949" y="18.7699638" width="81" height="9" />
+</g>
+</g>
+<animateMotion dur="6s" begin="0.5s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+</svg>
+</div>
+<svg class="fish" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMin slice" viewBox="0 0 743 645">
+<g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+<path d="M177.367 337.568L182.709 357.739C198.517 417.421 249.748 460.995 311.193 467.019L421.508 477.834C478.237 483.396 532.831 454.649 560.346 404.729C607.09 319.923 557.549 214.182 462.47 195.822L375.079 178.946C368.369 177.651 361.766 175.854 355.324 173.572C251.651 136.837 149.205 231.245 177.367 337.568Z" class="line" id="Line" />
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-103.000000, 3.000000)" fill="#F2AFAF">
+<g id="l-1" transform="translate(118.396084, 37.985234) rotate(-89.000000) translate(-118.396084, -37.985234) translate(104.396084, 23.985234)">
+<path d="M14.1723611,27.5145257 C19.9713509,27.5145257 24.6723611,22.8135155 24.6723611,17.0145257 C24.6723611,15.8258883 28.1981217,2.09701504 27.8341336,1.03166708 C26.4223375,-3.10048431 18.7827136,6.51452565 14.1723611,6.51452565 C9.87015746,6.51452565 1.67467528,-2.67194974 0.0523652038,1.03166708 C-0.512055182,2.32019808 3.67236107,15.5177394 3.67236107,17.0145257 C3.67236107,22.8135155 8.3733712,27.5145257 14.1723611,27.5145257 Z" />
+</g>
+</g>
+<animateMotion dur="6s" begin="0s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-71.000000, 3.000000)" fill="#ff5050">
+<g id="l-2" transform="translate(96.916890, 37.437926) rotate(-89.000000) translate(-96.916890, -37.437926) translate(60.416890, 13.437926)">
+<ellipse id="Oval" cx="36.5" cy="24" rx="16.5" ry="24" />
+<path d="M52.8409492,28.4193415 C56.9830848,28.4193415 67.8409492,23.8671728 67.8409492,17.7920406 C67.8409492,16.3338966 72.7364131,8.06546148 72.3851131,6.79204055 C71.2727759,2.75994931 63.4888957,6.79204055 60.3409492,6.79204055 C56.1988135,6.79204055 52.8409492,11.7169083 52.8409492,17.7920406 C52.8409492,23.8671728 48.6988135,28.4193415 52.8409492,28.4193415 Z" id="Oval" />
+<path d="M1.84094917,28.4193415 C5.98308479,28.4193415 16.8409492,23.8671728 16.8409492,17.7920406 C16.8409492,16.3338966 21.7364131,8.06546148 21.3851131,6.79204055 C20.2727759,2.75994931 12.4888957,6.79204055 9.34094917,6.79204055 C5.19881354,6.79204055 1.84094917,11.7169083 1.84094917,17.7920406 C1.84094917,23.8671728 -2.30118646,28.4193415 1.84094917,28.4193415 Z" id="Oval" transform="translate(10.701577, 16.709671) scale(-1, 1) translate(-10.701577, -16.709671) " />
+</g>
+</g>
+<animateMotion dur="6s" begin="0.1s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-58.000000, 3.000000)" fill="#D8D8D8">
+<g id="l-3-" transform="translate(83.924588, 36.883456) rotate(-89.000000) translate(-83.924588, -36.883456) translate(69.424588, 12.883456)">
+<path d="M14.1723611,48 C19.4148996,48 23.903645,41.8034457 25.7601702,33.016917 C26.3483828,30.2330353 28.8341336,32.1407168 28.8341336,28.9515567 C28.8341336,15.6967227 21.0759204,1.42108547e-14 14.1723611,1.42108547e-14 C7.2688017,1.42108547e-14 3.55271368e-15,13.745166 3.55271368e-15,27 C3.55271368e-15,29.9816317 1.95554677,29.8362716 2.47309478,32.4701788 C4.25630479,41.5452976 8.82173488,48 14.1723611,48 Z" id="l-3" />
+</g>
+</g>
+<animateMotion dur="6s" begin="0.2s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-48.000000, 3.000000)" fill="#D8D8D8">
+<g id="l-4-" transform="translate(73.917498, 37.202362) rotate(-89.000000) translate(-73.917498, -37.202362) translate(61.417498, 13.202362)">
+<path d="M12.2878333,48 C16.8332608,48 20.7251285,41.8034457 22.3347878,33.016917 C22.8447845,30.2330353 25,32.1407168 25,28.9515567 C25,15.6967227 18.2734123,1.42108547e-14 12.2878333,1.42108547e-14 C6.30225431,1.42108547e-14 0,13.745166 0,27 C0,29.9816317 1.69551372,29.8362716 2.14424232,32.4701788 C3.69033525,41.5452976 7.64869079,48 12.2878333,48 Z" id="l-4" />
+</g>
+</g>
+<animateMotion dur="6s" begin="0.3s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-32.000000, 3.000000)" fill="#D8D8D8">
+<g id="l-5-" transform="translate(58.922677, 36.774735) rotate(-89.000000) translate(-58.922677, -36.774735) translate(49.422677, 12.774735)">
+<path d="M9.33875331,48 C12.7932782,48 15.7510977,41.8034457 16.9744387,33.016917 C17.3620362,30.2330353 19,32.1407168 19,28.9515567 C19,15.6967227 13.8877933,1.42108547e-14 9.33875331,1.42108547e-14 C4.78971327,1.42108547e-14 0,13.745166 0,27 C0,29.9816317 1.28859043,29.8362716 1.62962417,32.4701788 C2.80465479,41.5452976 5.813005,48 9.33875331,48 Z" id="l-4" />
+</g>
+</g>
+<animateMotion dur="6s" begin="0.4s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+<g xmlns="http://www.w3.org/2000/svg" id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group" transform="translate(-1.000000, -2.000000)" fill="#D8D8D8">
+<g id="l-6" transform="translate(23.080623, 42.228667) rotate(-89.000000) translate(-23.080623, -42.228667) translate(-17.919377, 20.728667)">
+<path d="M41.7607406,42.4419194 C43.7607286,42.4419194 43.2381119,38.329711 43.2310921,38.0763828 C43.1415394,34.8446384 44.2788431,34.4419194 41.6451883,34.4419194 C39.0115336,34.4419194 39.7260112,34.2957436 39.8222402,37.76842 C39.82926,38.0217482 39.7195178,42.4419194 41.7607406,42.4419194 Z" id="Oval" />
+<path d="M23.6342467,37.7478622 C27.3113017,37.7478622 36.9500408,30.5559331 36.9500408,20.9578882 C36.9500408,18.65418 41.2958401,5.59095627 40.9839843,3.57909038 C39.9965407,-2.7911731 32.569021,0.0196920288 29.4031545,6.69804407 C26.912494,11.9520586 23.6342467,11.3598432 23.6342467,20.9578882 C23.6342467,30.5559331 19.9571917,37.7478622 23.6342467,37.7478622 Z" id="Oval" transform="translate(31.500000, 18.873931) scale(-1, 1) translate(-31.500000, -18.873931) " />
+<path d="M43.2310921,38.0763828 C46.9081472,38.0763828 56.5468863,30.8844538 56.5468863,21.2864088 C56.5468863,18.9827007 60.8926856,5.91947694 60.5808297,3.90761104 C59.5933862,-2.46265244 52.1658664,0.348212694 49,7.02656473 C46.5093394,12.2805793 43.2310921,11.6883638 43.2310921,21.2864088 C43.2310921,30.8844538 39.5540371,38.0763828 43.2310921,38.0763828 Z" id="Oval" />
+<rect id="Rectangle" fill-opacity="0" x="0.186684949" y="18.7699638" width="81" height="9" />
+</g>
+</g>
+<animateMotion dur="6s" begin="0.5s" repeatCount="indefinite" rotate="auto" fill="freeze">
+<mpath xlink:href="#Line" />
+</animateMotion>
+</g>
+
+</svg>
+
+</div>
+<a class="link" href="https://codepen.io/Anna_Batura/" target="_blank"><svg class="rabbit" version="1.2" viewBox="0 0 600 600">
+<path d="m 335.94313,30.576451 c -9.79312,-0.146115 -17.39091,4.439466 -17.39091,13.789758 0,11.508038 -2.91019,60.415461 1.40532,76.238951 4.31553,15.82355 21.58583,38.97215 34.51834,54.67597 10.06946,12.22726 4.34772,41.69626 4.34772,56.0813 0,14.38499 -2.89751,25.9107 -8.65153,25.9107 -5.75402,0 -14.35971,5.75217 -20.11373,11.50612 -5.75395,5.75402 -11.51588,12.95631 -18.70841,7.20229 -7.19251,-5.75402 -20.15388,-11.49441 -43.16987,-15.80992 -23.01609,-4.31551 -61.84129,-0.0234 -86.29583,8.60763 -24.45458,8.63104 -76.25857,56.11061 -90.643535,77.6882 -14.385056,21.5775 -15.799189,87.73247 -14.36068,97.80193 1.438509,10.06953 -2.908267,17.28255 -10.100778,8.65153 -7.192459,-8.63104 -12.911438,-4.30381 -12.911438,-4.30381 0,0 -7.202292,14.37045 -7.202292,21.56298 0,7.19244 2.854564,14.36068 2.854564,14.36068 0,0 -11.506099,8.65056 -11.506099,14.40458 0,5.75397 11.515881,15.83044 18.708391,24.46146 7.192546,8.63097 31.651182,25.89997 41.720624,24.46148 10.069543,-1.43851 28.775063,-0.0121 35.967573,4.3038 7.19253,4.31551 24.44687,10.06761 46.02443,11.5061 21.57752,1.43851 81.97845,5.75307 97.80193,5.75307 15.82357,0 20.1675,-2.86435 27.35996,-10.05688 7.19253,-7.19245 -5.78527,-15.84115 -10.10079,-25.9107 -4.31551,-10.06946 14.40363,-7.16912 20.15765,-8.60763 5.75402,-1.43849 21.59424,-11.5061 31.66376,-11.5061 10.06953,0 8.6165,10.05589 21.56298,15.80993 12.94654,5.75393 31.63939,24.43902 46.02443,27.31602 14.38497,2.87695 47.47173,0.0121 58.97979,-4.30381 11.50797,-4.31551 10.06946,-14.37044 0,-21.56297 -10.06955,-7.19244 -34.50663,-20.16742 -38.82214,-27.35994 -4.31551,-7.19246 -5.74329,-15.81969 1.44924,-23.01224 7.19251,-7.19252 14.35876,-4.30292 25.86678,-10.05685 11.50806,-5.75402 15.80992,-23.04354 15.80992,-33.11301 0,-10.06953 1.36928,-21.01352 5.75307,-27.31602 3.67345,-5.28128 5.10015,-22.13212 5.30499,-33.64009 0.21874,-12.28864 -5.29329,-15.24871 -9.60881,-22.44122 -4.31543,-7.19246 4.30285,-17.25917 10.05687,-17.25917 5.75402,0 31.65108,-4.33602 41.72062,-8.65153 10.06946,-4.31546 20.16744,-23.03273 27.35995,-31.66377 7.19246,-8.63095 1.41799,-27.31512 -8.65154,-33.06907 -10.06954,-5.75402 -10.07746,-21.59431 -18.70841,-31.66377 -8.63103,-10.06953 -18.68507,-31.62961 -27.31604,-38.82213 -8.63101,-7.19253 -28.77502,-12.95535 -35.96755,-12.95535 -7.19253,0 -11.50612,9e-4 -11.50612,-5.75306 0,-5.75402 -1.44924,-12.9203 -1.44924,-25.86678 0,-12.94655 -16.24344,-68.464566 -37.3729,-102.149659 -4.40799,-7.027282 -11.5581,-5.405316 -20.15765,-2.898485 -5.69412,1.659863 -8.60761,4.35564 -8.60761,23.056136 0,18.700566 -11.50515,-0.03133 -17.25917,-10.100794 -5.75403,-10.069512 -15.86265,-21.58444 -28.80918,-24.461458 -2.42749,-0.539415 -4.76669,-0.800692 -7.02665,-0.834399 z" id="rabbit"></path>
+
+<defs>
+<filter id="goo">
+<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+<feBlend in="SourceGraphic" in2="goo" />
+</filter>
+</defs>
+</svg></a>
+</div>
+<!-- FORM END -->
+
+</div>
+<div style="position:relative;display:block;float:left;left:-2%;margin-top:-4.5%;width:47.13%;height:585px;">
+<img src="./common/halfpaged.png" height="135%" width="179.9%" />
+<br /><br />
+<!-- <img src="./common/truck.jpg" id="movingdot" style="margin-left:10px;" height="90px" width="150px" />  -->
+</div>
+<!-- HEADER CONTENT END -->
+</div>
+<!-- HEADER END -->
+</div>
+<!-- for desktop/laptop end -->
+<!-- for mobile start -->
+<div id="mhalfpage" class="mhalfpage">
+<div id="mheader">
+<span alt="MoveTez" style="float:right;width:35%;margin:0.0119% 2% 0 0;height:50px;"><a href="../index.html"><img src="../common/logo.png" align="top" width="100%" height="100%" /></a></span>
+</div>
+<div id="menuBtn"></div>
+<div id="msupernavi">
+<div id="mnavbar">
+<div id="mnaavbar" style="display:none;padding:10px;">
+<span style="float:right;width:35%;margin-right:30.36%;height:50px;margin-top:-0.789%;"><a href="index.html"><img alt="MoveTez" src="../common/logo.png" align="top" width="100%" height="100%" /></a></span>
+<!-- <span style="float:right;margin-right:1%;">
+<button class="mregisterbutton" onclick="location.href='../index.html#register-section'" type="button">Register</button> -->
+</span>
+</div>
+</div>
+</div>
+<ul id="mnav">
+<li class="mnavli"><a href=""><font color="#1ed4ed">About us</font></a></li>
+<li class="mnavli"><a href="../index.html#pricing" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">Pricing</a></li>
+<li class="mnavli"><a href="../index.html#products-start" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">Products</a></li>
+<li class="mnavli"><a href="../contact.html" style="color:white;" onmouseover="this.style.color='#1ed4ed'" onmouseout="this.style.color='white'">Contact</a></li>
+</ul>
+<div id="mobileHeadContent">
+<div id="mhalfimage"><img src="./common/halfpaged.png" /></div>
+</div>
+</div>
+<!-- for mobile end -->
+<!-- HALF PAGE END -->
+
+
+<div class="xtraspace xxtraspace"><br><br>
+<br><br></div>
+
+
+<!-- CONTENT START -->
+<div id="content">
+<!-- WARNING DONT DISTURB THE HALF-PAGE-CONTENT NAVBAR PAGE-CONTAINER DIV -->
+
+
+<!-- Statistics START -->
+<div style="position:relative;display:box;width:100%;height:auto;clear:both;">
+<br /><br /><br>
+
+<div id="statistics">
+  <div><center><img src="./common/fed1.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>&nbsp;Hassle-Free</h1>Book the required category<br> vehicle in seconds</center></p></div>
+
+  <div><center><img src="./common/fed2.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Safety & Security</h1>Delivery by experienced drivers<br> with OTP confirmation at the<br> time of pickup and delivery</center></p></div>
+
+  <div><center><img src="./common/fed3.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Facilitates Growth</h1>Now make multiple<br> pickups/deliveries in a<br> day hassle-free</center></p></div>
+</div>
+
+<div class="xtraspace xxtraspace"><br><br><br><br><br><br></div>
+
+<div id="statistics">
+  <div><center><img src="./common/fed4.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Transparent Pricing</h1><center>No negotiation, <br>bargaining, and haggling<br> with the user</center></p></div>
+
+  <div><center><img src="./common/fed5.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Quick and Real-Time Delivery</h1><center>No waiting,<br> book the nearest vehicle.<br> Track using the mobile app</center></p></div>
+
+  <div><center><img src="./common/fed6.png" height="60%" width="60%" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Reliable</h1>Dependable delivery<br> by category special drivers</center></p></div>
+</div>
+
+<div id="mstatistics">
+  <div><center><img src="./common/fed1.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>&nbsp;Hassle-Free</h1>Book the required category vehicle in seconds</center></p></div>
+
+  <div><center><img src="./common/fed6.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Reliable</h1>Dependable delivery by category special drivers</center></p></div>
+</div>
+
+<br><br><br>
+
+<div id="mstatistics">
+  <div><center><img src="./common/fed3.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Facilitates Growth</h1>Now make multiple pickups/deliveries in a day hassle-free</center></p></div>
+
+  <div><center><img src="./common/fed4.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Transparent Pricing</h1><center>No negotiation, bargaining, and haggling with the user</center></p></div>
+</div>
+
+<br><br><br>
+
+<div id="mstatistics">
+  <div><center><img src="./common/fed5.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Quick and Real-Time Delivery</h1><center>No waiting, book the nearest vehicle. Track using the mobile app</center></p></div>
+
+  <div><center><img src="./common/fed2.png" /><p style="position:relative;clear:both;margin-top:-4px;"><h1>Safety & Security</h1>Delivery by experienced drivers with OTP confirmation at the time of pickup and delivery</center></p></div>
+</div>
+<br><br><br>
+
+</div>
+<!-- Statistics END -->
+
+
+<!-- Registration Reason START -->
+<div class="rgster_reason">
+<div id="holderport">
+<img style="margin-left:-36.5%;" src="./common/myvehicles.png" width="166%" height="291px" />
+
+</div>
+   <div id="holder">
+            <div id="viewport">
+                <div class="subviewport expl">
+                    <div id="explosion">
+                        <div id="explosion-circle"></div>
+                    </div>
+                </div>
+                <div class="subviewport red">
+                    <div class="circles">
+                        <div class="circle-top"> </div><div class="circle-top"> </div><div class="circle-top"></div><div class="circle-top"> </div>
+                    </div>
+                </div>
+
+                <svg version="1.1" id="red-legs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="239.189px" height="213.698px" viewBox="0 0 239.189 213.698"  enable-background="new 0 0 150 150" xml:space="preserve">
+                <path fill="none" stroke="#333333" stroke-width="2" d="M148.126,179.477c64-17.334,4.667-27.333,2,16">
+                <animate attributeName = "d" 
+                         begin = "0s"
+                         dur = "0.96s"
+                         repeatCount  = "indefinite"
+                         values = "M148.126,179.477c64-17.334,4.667-27.333,2,16;
+                         M137.493,179.477c61.5-13.898,15.681-24.738,8,16;
+                         M125.493,162.989c60.25,16.182,11.25-11.5,18,32.487;
+                         M125.493,146.489c38.75,24.494,14.75,13.5,14.75,48.987;
+                         M125.493,133.239c12.932,16.25,18.5,26.75,4,62.237;
+                         M125.493,120.739c46,17.25,17.25,48.5-9,48.5;
+                         M122.743,113.489c52.25,8,21.25,54.75,6.461,54.75;
+                         M122.743,106.849c63.25,5.39,28,61.39,16.929,61.39;
+                         M122.743,106.849c49.25,0,41.665,42.391,26.587,56.412;
+                         M124.743,103.739c44.75,0,41.747,36.359,33.055,54.055;
+                         M124.743,100.739c48.25,0,41.93,28.484,41.93,50.18;
+                         M124.743,100.739c48.25,0,50.108,24.09,54.25,48.18;
+                         M124.743,100.739c60,0,46.5,13.75,67.25,44;
+                         M124.743,99.739c31.5,31.5,63.25,7.11,72.25,45;
+                         M124.743,99.739c21.602,37.11,25.852,49.86,65.352,49.86;
+                         M124.743,99.739c14.602,36.86,38.852,53.36,65.352,71.36;
+                         M126.664,106.849c4.632,12.079,41.931,58.5,63.431,84;
+                         M125.505,112.099c11.84,11.5,46.84,46.75,57.84,80;
+                         M133.094,117.099c11.84,11.5,39.5,34.25,42.5,75;
+                         M133.094,124.349c12.951,9.631,38,16,38,69.75;
+                         M130.344,135.099c64,29.5,18.875,20.5,37.75,59;
+                         M124.844,147.365c78.5,15.734,16.375,8.234,35.25,46.734;
+                         M141.844,159.599c52,6,10.25-5.978,14.069,34.5;
+                         M147.094,168.349c59.25-6.143,2.5-14.5,7,25.75
+                         "
+                         />
+                </path>
+                <path fill="none" stroke="#333333" stroke-width="2" d="M78.559,134c64-17.334,4.667-27.333,2,16">
+                <animate attributeName = "d" 
+                         begin = "0s"
+                         dur = "0.96s"
+                         repeatCount   = "indefinite"
+                         values = "M80.126,156.81c-20.667,28.667-8.667,37.999,22,29.333;
+                         M66.993,195.477c46,0,42.292-11.696,46-15.403;
+                         M74.753,195.354c46,0,47.031-28.657,50.739-32.364;
+                         M81.243,195.477c46,0,52-24.556,44.25-48.987;
+                         M103.517,186.74c53.726-3.75,30.745-34.627,18.976-53.5;
+                         M116.493,195.477c21.592-34.487,17.096-50.688,9-74.737;
+                         M106.993,195.477c29.5-36.237,26.149-55.987,15.75-81.987;
+                         M94.493,195.477c34.711-27.237,38.649-62.627,28.25-88.627;
+                         M85.993,195.477c22.75-30.487,38.75-60.386,38.75-88.627;
+                         M76.993,195.477c22.75-30.487,36-68.487,47.75-94.737;
+                         M69.243,177.99c32-23,55.5-55.75,55.5-77.25;
+                         M68.243,158.74c39-4.5,56.5-36.5,56.5-58;
+                         M69.243,146.24c32,9,55.5-24,55.5-45.5;
+                         M69.243,143.24c33.75,11.5,59-20.5,55.5-42.5;
+                         M69.243,138.849c30.852,19.25,59-16.109,55.5-38.11;
+                         M71.094,135.419c29.5,23.68,58.5-9.82,53.648-34.68;
+                         M72.594,133.349c27.034,23.625,52.375,4.75,54.067-27.5;
+                         M72.594,128.696c17,33.653,52.908,14.153,52.91-16.597;
+                         M72.594,124.849c14,37.25,51.908,24,51.91-6.75;
+                         M74.344,127.599c0,35.5,46.75,34.75,49.16-1.5;
+                         M75.344,133.599c-2.5,36.5,44.75,36.75,47.16,0.5;
+                         M75.259,137.373c-9.915,37.477,42.675,45.242,45.085,8.992;
+                         M78.094,142.599c-12.75,31.5,19.75,45.25,35,19.5;
+                         M78.094,151.349c-11.25,21-1.25,41.25,27.5,24.218;"
+                         />
+                </path>
+                </svg>
+
+                <div class="hexagon dude" style="
+                     ">
+                    <div class="face"> </div>
+
+                </div>
+
+                <div class="subviewport orange"> 
+                    <div class="circles">
+                        <div class="circle-top"> </div><div class="circle-top"> </div><div class="circle-top"></div><div class="circle-top"> </div>
+                    </div>
+                </div>
+
+                <svg version="1.1" id="orange-legs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="239.189px" height="213.698px" viewBox="-30 0 239.189 213.698"  enable-background="new 0 0 150 150" xml:space="preserve">
+                <path fill="none" stroke="#333333" stroke-width="2" d="M-17.904,195.477c41.333-36.127,36-59.46,45.333-80.127">
+                <animate attributeName = "d" 
+                         begin = "0.12s"
+                         dur = "1.44s"
+                         repeatCount  = "indefinite"
+                         values = "M-17.904,195.477c41.333-36.127,36-59.46,45.333-80.127;
+                         M-21.906,195.477c42.25-32.377,41.687-57.056,49.335-80.127;
+                         M-24.906,194.1c42.75-27.75,45.546-53.48,52.335-76.75;
+                         M-24.906,194.1c42.75-27.75,43.068-44.52,49.857-67.789;
+                         M-28.906,195.35c42.25-25,44.25-33.25,52.5-58;
+                         M-35.906,194.35c30.065-8.45,47.75-16.5,58.029-42.744;
+                         M-44.656,194.35c30,0,46.5,3,65.5-16.5;
+                         M-34.656,186.35c30,0,36.263,1.735,49.49-8.916;
+                         M-26.406,177.1c30,0,28.25,3,38.75-5.25;
+                         M-16.156,169.35c30,0,27.536,0.544,37.792-5.166;
+                         M-7.694,161.773c30,0,54.289-7.674,46.289-26.924;
+                         M1.973,154.062c32.622,0,50.622-8.674,42.622-27.924;
+                         M10.204,158.273c32.89,1.076,50.64-19.337,30.14-38.674;
+                         M18.844,162.85c32.89,1.076,43-30.5,20.25-45.25;
+                         M26.094,166.85c33.75-4.25,35.75-37.75,12-51.25;
+                         M28.844,168.1c30.25-4.75,32.5-42,9.25-52.5;
+                         M34.094,169.6c27-5.25,27.5-47.5-2-55;
+                         M43.594,175.35c20-18,16.75-55.25-14.75-59.25;
+                         M53.344,182.1c13.25-25.25,6.542-58.25-24.5-63.875;
+                         M58.594,186.183c5.093-25-2.5-58.333-31.167-64.5;
+                         M62.928,188.35c0.969-25.167-10.613-49.714-30-60.333;
+                         M70.928,194.85c-15.667-26.833-30.333-41.5-42.5-60.333;
+                         M61.261,194.85c-4-30.167-8.333-31.667-21.833-48.667;
+                         M53.761,194.85c0.667-43.833-3-5.833-28.333-37.5;
+                         M47.219,193.975c-8.125-48.75,28.25-1-15.125-21.125;
+                         M45.25,193.975c-7.655-42.625,21.97-10.875-7.655-21.375;
+                         M39.344,193.975c-7.125-30.375,17-22.875-1.75-30.375;
+                         M30.719,193.975c-4.125-23.625,15.875-32.5,4.5-42.5;
+                         M-4.656,165.1c44.25,7.375,52-19.25,39.113-27.375;
+                         M5.844,153.975c44.25,7.375,52-17.75,31-27.25;
+                         M12.344,156.475c43.25,5.25,45.5-28.625,20.875-35;
+                         M18.719,159.225c42.75-3.125,37.375-37,13-40.5;
+                         M24.469,162.475c35.75-6.625,31.875-42.375,9.5-46.875;
+                         M30.928,165.017c31-9.792,26.167-44.334,6.84-51.167;
+                         M39.928,170.683c18.251-11.833,19.167-44.333-4.16-57.833;
+                         M49.094,177.017c9.803-18.454,8.5-50.334-13.326-64.167;
+                         M58.094,182.85c3.129-25.685-1.833-57-25.167-70.333;
+                         M67.428,190.183c-2.167-25.833-21.424-66.333-41.833-77.666;"
+                         />
+                </path>
+
+                <path fill="none" stroke="#333333" stroke-width="2" d="M27.429,113.85c25.415,25.25,32.665,37,40.165,77.25">
+                <animate attributeName = "d" 
+                         begin = "0.12s"
+                         dur = "1.44s"
+                         repeatCount   = "indefinite"
+                         values = "M27.429,113.85c25.415,25.25,32.665,37,40.165,77.25;
+                         M27.429,113.85c17.415,28.25,31.165,39.5,42.915,79;
+                         M29.429,118.1c18.024,31.027,22.165,39.25,42.665,74.75;
+                         M30.594,128.1c13.25,33.5,15.25,32.375,41.5,64.75;
+                         M27.594,135.6c11.5,29.25,41.5,41.75,35.5,58.5;
+                         M32.594,158.85c13.122,28.5,34.25,3.75,21.25,35.25;
+                         M29.844,172.978c34.5,40.722,31.25-28.628,15.224,20.122;
+                         M37.094,170.35c27.75,21.334,11.5-14.75,1.964,21.334;
+                         M38.844,163.85c10.5,15.125,0,0-7.5,30.25;
+                         M34.344,152.6c8,14.22-1.75,14.22-10,41.5;
+                         M31.097,139.6c1.891,15.283-4.503,27.22-12.753,54.5;
+                         M28.094,130.35c-4.472,15.25-8.043,36.47-16.293,63.75;
+                         M28.094,122.6c-1.126,3.839-8.691,32.453-20.5,71.5;
+                         M25.844,117.6c-1.126,3.839-11.119,37.418-22.927,76.465;
+                         M24.094,115.1C22.969,118.938,11.547,155.6-1,194.064;
+                         M24.094,115.1C22.969,118.938,10.547,154.6-2,193.064;
+                         M24.094,115.1C22.969,118.938,10.547,154.6-2,193.064;
+                         M24.094,115.1c-1.126,3.839-11,43-28,79;
+                         M23.261,118.225C21.838,130.457,9.928,171.017-8.072,194.1;
+                         M25.428,119.85c-1.833,15.333-15.833,51.833-35.667,74.25;
+                         M24.116,126.688c-1.833,15.333-16.355,50.829-39.021,67.412;
+                         M23.428,132.517c-1.833,15.333-19.167,44.75-41.833,61.333;
+                         M22.761,141.183c-7.833,27.834-24.833,42-47.667,53.667;
+                         M22.761,152.85c-13.5,28.333-33.333,40.5-53.667,42;
+                         M22.761,176.475c-24.667,21-38.167,18.756-57.417,18.756;
+                         M13.566,182.473C0,192.162-11.156,193.6-31.656,192.35;
+                         M14.094,178.225c-11.75,9.5-18.5,7.625-39,6.375;
+                         M34.457,152.85c0,8.375-12.613,30.375-49.863,21.875;
+                         M30.344,140.35c0.75,9.875-5.625,29.875-9.5,53.375;
+                         M21.469,138.1c0.75,9.875-4.875,32.125-8.75,55.625;
+                         M22.594,127.85c0.039,9.625-9.625,42.375-13.5,65.875;
+                         M23.344,121.475c0.039,9.625-13.625,48.75-17.5,72.25;
+                         M23.344,116.725c0.037,9.146-16.417,52.792-21.25,77;
+                         M23.344,114.517c-0.75,9-18.583,56.307-24.917,79.208;
+                         M24.594,112.517c-0.75,9-16.833,60-29.833,81.208;
+                         M24.594,112.517c-2.167,23.5-17.583,65.833-35.167,81.208;
+                         M25.594,112.517c-1.167,23-15.5,64.5-40.333,81.208;
+                         M25.594,112.517c-1.167,23-16,65.333-43.5,81.166;"
+                         />
+                </path>
+                </svg>
+
+                <div class="box dude" style="
+                     "> <div class="face" style="
+                        "></div></div>
+
+                <div class="subviewport green" style="
+                     ">
+                    <div class="circles">
+                        <div class="circle-top"> </div><div class="circle-top"> </div><div class="circle-top"></div><div class="circle-top"> </div><div class="circle-top"> </div>
+                    </div>
+                </div>
+
+                <div class="rectangle dude">
+                    <div class="face"> </div>
+                </div>
+
+                <div class="subviewport blue" style="
+                     ">
+                    <div class="circles">
+                        <div class="circle-top"> </div><div class="circle-top"> </div><div class="circle-top"> </div><div class="circle-top"> </div><div class="circle-top"> </div><div class="circle-top"></div><div class="circle-top"></div><div class="circle-top"> </div>
+                    </div>
+                </div>
+
+                <div class="circle dude">
+                    <div class="face"> </div>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+<div id="rgster-reason">
+<br /><br /><br>
+<br /><br /><br>
+<br /><br /><br>
+<div class="notxtraspace"><br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br></div>
+
+<center>
+<span style="width:100%;font-size:6.3rem;color:white;">
+What are you waiting for
+<br /><br />
+</span>
+
+<a href="#topsection" class="cta">
+<span>Register</span>
+<svg width="13px" height="10px" viewBox="0 0 13 10">
+<path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline>
+</svg>
+</a>
+
+</center>
+
+</div>
+<!-- Registration Reason END -->
+
+
+<div class="xtraspace xxtraspace"><br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br></div>
+<center>
+<span id="holderportd">
+</span>
+</center>
+
+</div>
+<!-- CONTENT END -->
+
+
+<div class="xtraspace xxtraspace" id="prefooterspace"><br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br></div>
+
+
+<!-- THE FOOTER -->
+<div id="footer0" class="container-fluid" style="color:silver;">
+<br>
+<div style="position:relative;width:26.01%;margin-left:2%;float:left;padding:10px;font-family:Nexa;">
+<div style="border-right:1px groove #70a9b6;">
+<div title="MoveTez" style="float:left;width:80.897%;height:auto;"><a href="../index.html"><img src="../common/logod.png" align="top" width="100%" /></a></div>
+<div style="position:relative;font-size:18px;clear:both;margin-left:4%;"><br />Safe Chalega, Tez Bhadega</div>
+<div style="position:relative;clear:both;float:left;left:22.01%;"><br />
+<div style="display:flex;flex-direction:row;">
+<div style="background-color:#1ed4ed;width:25px;height:25px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+</div>
+</div>
+<div style="position:relative;font-size:13px;clear:both;color:white;margin-left:3.5%;"><br /><br /><br />
+<br />
+</div>
+</div>
+</div>
+<div style="position:relative;width:63%;float:left;margin-left:5.65%;padding:0px;font-family:Nexa;">
+<div style="position:relative;float:left;width:17.945%;">
+<h3>Company</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="../about.html">About Us</a><br>
+<a style="text-decoration:none;" href="../index.html#pricing">Pricing</a><br>
+<a style="text-decoration:none;" href="">O<font face="arial" size="3em">ff</font>ers</a><br></div>
+</div>
+<div style="position:relative;left:2%;float:left;width:25%;">
+<h3>Service</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="vendor.html">Vendors<br>
+<a style="text-decoration:none;" href="driver.html">Drivers<br>
+<a style="text-decoration:none;" href="../movnpack.html">Movers & Packers</a><br></div>
+</div>
+<div style="position:relative;margin-left:2%;float:left;width:15%;">
+<h3>Resources</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="../blog.html">Blog</a><br><br>
+<img src="../common/briefcase.png" width="33px" height="30px" align="top" />&ensp;<a style="text-decoration:none;" href="../hiring.html">Hiring</a><br></div>
+</div>
+<div style="position:relative;margin-right:8.439%;margin-top:-3.9567%;float:right;width:24.28%;">
+<span title="Download for Android" style="width:100%;height:auto;"><a href=""><img src="../common/appicoo.png" align="top" width="100%" /></a></span>
+</div>
+</div>
+<div style="position:relative;left:10%;width:40%;float:left;">
+<br><br><br><br>
+</div>
+<div style="position:relative;display:block;clear:both;width:100%;background:#2b2e33;height:auto;">
+<span style="position:relative;font-size:16px;float:left;color:white;margin-left:3.5%;">
+<a href="../privacy.html" style="text-decoration:none;"><font color="white">Privacy Policy</font></a>&ensp;&ensp;<a href="../tos.html" style="text-decoration:none;"><font color="white">Terms of Service</font></a>
+</span>
+<center><font size="3px">Copyright &copy; 2021-22 All Rights Reserved.</font><center>
+<span style="position:relative;font-size:16px;float:right;margin-top:-1.5%;margin-right:3%;color:white;">
+<a href="../sitemap.php" style="text-decoration:none;"><font color="white">Sitemap</font></a>
+</span>
+<br />
+</div>
+</div>
+
+<div id="footer1" class="container-fluid" style="color:silver;">
+<br />
+<div style="position:relative;display:block;clear:both;width:100%;font-family:Nexa;">
+<div title="MoveTez" style="float:left;margin:0 0 0 5%;width:48%;height:auto;"><a href="../index.html"><img src="../common/logod.png" align="top" width="100%" /></a></div>
+<div style="float:right;margin-right:8.9%;margin-top:-5%;width:30%;"><br />
+<a href=""><img src="../common/appicoo.png" align="top" width="100%" /></a>
+</div><br><br>
+<div style="position:relative;font-size:14px;margin-left:9.29%;"><br />Safe Chalega, Tez Bhadega</div><br />
+<div style="position:relative;display:block;width:100%;">
+<div style="display:flex;flex-direction:row;margin-left:17%;width:25%;">
+<div style="background-color:#1ed4ed;width:25px;height:25px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+</div>
+</div>
+</div>
+<br /><br>
+<div style="position:relative;display:block;clear:both;width:100%;font-family:Nexa;">
+<div style="position:relative;float:left;width:45%;margin-left:8%;">Company<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="../about.html">About Us</a><br>
+<a href="../index.html#pricing">Pricing</a><br>
+<a href="">Of<font face="cambria">f</font>ers</a></div>
+</div>
+<div style="position:relative;float:right;width:35.5956%;margin-right:3%;">Resources<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="">Blog</a><br>
+<br>
+<a href=""><img src="../common/briefcase.png" width="30px" height="25px" align="top" /> Hiring</a></div>
+</div>
+</div>
+<div style="position:relative;display:block;top:2.4vh;height:auto;clear:both;width:100%;font-family:Nexa;"><br>
+<div style="position:relative;float:left;width:45%;margin-left:8%;">Service<br>
+<div style="position:relative;padding:2px 0 0 5%;width:100%;"><a href="vendor.html">Vendors</a><br>
+<a href="driver.html">Drivers</a><br>
+<a href="">Movers &amp; Packers</a></div>
+</div>
+<br><br><br />
+</div>
+<br /><br /><br /><br />
+<div style="position:relative;display:block;clear:both;top:3vh;width:100%;font-family:Nexa;">
+<span style="margin-left:4%;font-size:14px;position:relative;">Privacy Policy</span>
+<span style="margin-left:6%;font-size:14px;position:relative;">Terms Of Service</span>
+<span style="margin-left:7.98%;font-size:14px;position:relative;">Sitemap</span>
+<br /><center>Copyright &copy; 2021-22 All Rights Reserved.</center>
+</div>
+<br /><br />
+</div>
+<!-- THE FOOTER END -->
+
+
+</div>
+<!-- END OF PAGE-CONTAINER -->
+<script>
+function bgchnger(x)
+{
+  if(x == 1)
+  {
+    document.getElementById("child-flexi1").style.background = "#666666";
+  }
+  else if(x == 2)
+  {
+    document.getElementById("child-flexi2").style.background = "#7ab6d1";
+  }
+  else if(x == 3)
+  {
+    document.getElementById("child-flexi3").style.background = "#666666";
+  }
+  else if(x == 4)
+  {
+    document.getElementById("child-flexi1").style.background = "#000000";
+  }
+  else if(x == 5)
+  {
+    document.getElementById("child-flexi2").style.background = "#4297bf";
+  }
+  else if(x == 6)
+  {
+    document.getElementById("child-flexi3").style.background = "#000000";
+  }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-firestore.js"></script>
+<script type="text/javascript">
+  var firebaseConfig = {
+    apiKey: "AIzaSyBuKJgtB42fJXJIDU2_tBh5ZK6n9E2_hkQ",
+  authDomain: "movetez-website.firebaseapp.com",
+  projectId: "movetez-website",
+  storageBucket: "movetez-website.appspot.com",
+  messagingSenderId: "97464215331",
+  appId: "1:97464215331:web:0a26336a40d53ac1a28e96",
+  measurementId: "G-N36PD2PXKG"
+  };
+  firebase.initializeApp(firebaseConfig);
+const auth= firebase.auth();
+  
+  const db=firebase.firestore();
+  /**
+   * Set up UI event listeners and registering Firebase auth listeners.
+   */
+  
+  
+  /**
+   * Updates the Signed in user status panel.
+   */
+
+</script>
+
+<script type="text/javascript" src="./common/script1.js"></script>
+<script type="text/javascript" src="../common/mscript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0px 0px 0px 0px;
+}
+
+#page-container
+{
+  position: relative;
+  min-height: 100vh;
+}
+
+body
+{
+  margin: 0px 0px 0px 0px;
+  overflow-x:hidden;
+  background-position:center;
+  background-size: 100%,100%;
+  /* background-image: radial-gradient(#84CEEB, #5AB9EA, #8860D0); */
+  /* background-image: radial-gradient(#a7dcf1, #78c6ed, #a689dc); */
+  /* background-image: radial-gradient(#e9f6fc, #ffffff, #d3c4ed); */
+  /* background-image: radial-gradient(#ffffff, #ffffff, #b59de2); */
+  transition: background 1s;
+}
+
+.disclaimer
+{
+  display:none;
+}
